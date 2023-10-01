@@ -1,0 +1,143 @@
+#personal-projects {
+    background-color: $background-color-3;
+    display: flex;
+    flex-direction: column;
+    .title-and-link-projects {
+        display: flex;
+        flex-direction: row;
+        .title {
+            color: $font-color-1;
+            font-size: 3.5em;
+            font-weight: 700;
+            margin: 5% auto 0 5%;
+        }
+
+        .link-see-all {
+            width: 8em;
+            height: 2em;
+            background-color: $background-color-4;
+            font: bold 1.2em "Poppins";
+            color: $font-color-3;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding-top: .5em;
+            margin: 6% 5% auto;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .base {
+        display: flex;
+        flex-direction: row;
+        
+        .star-project {
+            max-width: 40.25em;
+            max-height: 23.5em;
+            border-radius: 1.6em;
+            background: url(../images/tabela-de-precos.svg) no-repeat;
+            margin: 5% auto 0 auto;
+            display: flex;
+            .link-star-project {
+                font-size: 1.8em;
+                font-weight: 700;
+                color: $font-color-1;
+                margin: 45% auto;
+                padding: 0 1em 0 1em;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &:hover {
+                border: .1em solid $font-color-1;
+            }
+        }
+        
+        .small-base {
+            margin: 3% auto auto 0;
+            .secondarys-projects {
+                max-width: 40.25em;
+                max-height: 8em;
+                background-color: $background-color-4;
+                border-radius: 1.8em;
+                display: flex;
+                flex-direction: row;
+                margin-top: 5%;
+                &:hover {
+                    border: .1em solid $font-color-1;
+                }
+
+                .name-and-description-proj {
+                    display: flex;
+                    flex-direction: column;
+                    .link-project {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        color: $font-color-1;
+                        margin: 0.5em 0 0 1em;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .project-description {
+                        font-weight: 400;
+                        color: $font-color-1;
+                        margin: 0 0 0 2em;
+                    }
+                }
+            
+                .project-preview {
+                    border-radius: 0 1.8em 1.8em 0;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #personal-projects {
+        .title-and-link-projects{
+            .title {
+            font-size: 2.5em;
+            }
+            /*.see-all {
+            margin: -2rem auto auto 80%;
+            }*/
+        }
+        .base {
+            display: flex;
+            flex-direction: column;
+            padding: 0 auto 0 15%;
+            margin: 0;
+
+            .small-base {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    #personal-projects {
+        .title {
+            font-size: 1.5em;
+        }
+        .see-all {
+            height: 1.5em;
+            margin: -2rem auto auto 80%;
+            width: 4em;
+            .link-see-all {
+                font-size: .5em;
+                padding: .5em 0 0 1em;
+            }
+        }
+        .base {
+            .star-project {
+                margin: auto 0 0 10%;
+            }
+        }
+    }
+}
