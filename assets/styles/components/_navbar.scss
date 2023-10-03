@@ -83,3 +83,11 @@
         display: block;
     }
 }
+
+@media screen and (max-width:645px) {
+    #navbar {
+        .logo-link {
+            width: 65%;
+        }
+    }
+}

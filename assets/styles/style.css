@@ -97,6 +97,11 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 }
+@media screen and (max-width: 645px) {
+  #navbar .logo-link {
+    width: 65%;
+  }
+}
 #banner {
   background-color: #1E4E64;
   height: 10%;
@@ -124,6 +129,13 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   min-height: 705px;
   overflow-x: hidden;
+}
+#presentation .crobat {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 4rem auto auto 6rem;
+  animation: crobatAnimation 60s infinite linear;
 }
 #presentation .title {
   color: #FFFFFF;
@@ -164,11 +176,34 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
   color: #777777;
 }
-#presentation iframe {
-  height: 85%;
-  margin: 7% 15% auto 15%;
-  position: absolute;
-  width: 70%;
+
+@media screen and (max-width: 1280px) {
+  #presentation .crobat {
+    animation: crobatTabAnimation 20s infinite linear;
+  }
+  #presentation .title {
+    font-size: 2.5em;
+  }
+  #presentation .about-description {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 645px) {
+  #presentation .crobat {
+    animation: crobatMobAnimation 10s infinite linear;
+    margin: 1rem auto auto 4rem;
+  }
+  #presentation .paragraph-link {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1rem;
+  }
+  #presentation .paragraph-link .about-link {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+  }
 }
 @keyframes jump {
   0% {
@@ -181,26 +216,79 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1);
   }
 }
-
-@media screen and (max-width: 1280px) {
-  #presentation .title {
-    font-size: 2.5em;
+@keyframes crobatAnimation {
+  0% {
+    margin: 4rem auto auto 6rem;
   }
-  #presentation .about-description {
-    width: 60%;
+  12.5% {
+    margin: 20rem auto auto 10rem;
+  }
+  25% {
+    margin: 23rem auto auto 80rem;
+  }
+  37.5% {
+    margin: 5rem auto auto 65rem;
+  }
+  50% {
+    margin: -15rem auto auto 80rem;
+  }
+  62.5% {
+    margin: 0rem auto auto 55rem;
+  }
+  75% {
+    margin: 0rem auto auto 25rem;
+  }
+  87.5% {
+    margin: -15rem auto auto 6rem;
+  }
+  100% {
+    margin: 4rem auto auto 6rem;
   }
 }
-@media screen and (max-width: 645px) {
-  #presentation .paragraph-link {
-    font-size: 1em;
-    font-weight: 700;
-    padding: 1rem;
+@keyframes crobatTabAnimation {
+  0% {
+    margin: 4rem auto auto 6rem;
   }
-  #presentation .paragraph-link .about-link {
-    font-size: 1em;
-    font-weight: 700;
-    padding: 0 1rem 0 1rem;
-    text-align: center;
+  12.5% {
+    margin: 20rem auto auto 10rem;
+  }
+  25% {
+    margin: 10rem auto auto 15rem;
+  }
+  37.5% {
+    margin: 20rem auto auto 30rem;
+  }
+  50% {
+    margin: 0rem auto auto 20rem;
+  }
+  62.5% {
+    margin: 0rem auto auto 25rem;
+  }
+  75% {
+    margin: 0rem auto auto 15rem;
+  }
+  87.5% {
+    margin: 0rem auto auto 6rem;
+  }
+  100% {
+    margin: 4rem auto auto 6rem;
+  }
+}
+@keyframes crobatMobAnimation {
+  0% {
+    margin: 1rem auto auto 4rem;
+  }
+  25% {
+    margin: 12rem auto auto 4rem;
+  }
+  50% {
+    margin: 12rem auto auto 18rem;
+  }
+  75% {
+    margin: 1rem auto auto 18rem;
+  }
+  100% {
+    margin: 1rem auto auto 4rem;
   }
 }
 #personal-projects {
@@ -297,11 +385,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1280px) {
-  #personal-projects .title-and-link-projects {
-    /*.see-all {
-    margin: -2rem auto auto 80%;
-    }*/
-  }
   #personal-projects .title-and-link-projects .title {
     font-size: 2.5em;
   }

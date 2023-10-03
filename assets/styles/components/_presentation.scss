@@ -3,6 +3,14 @@
     background-size: cover;
     min-height: 705px;
     overflow-x: hidden;
+    .crobat {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin: 4rem auto auto 6rem;
+        animation: crobatAnimation 60s infinite linear;
+    }
+
     .title {
         color: $font-color-1;
         font-size: 3.5em;
@@ -44,27 +52,14 @@
             }
         }
     }
-
-    iframe {
-        height: 85%;
-        margin: 7% 15% auto 15%;
-        position: absolute;
-        width: 70%;
-    }
-
-    @keyframes jump {
-        0% {
-            transform: scale(1);
-        } 50% {
-            transform: scale(1.05);
-        } 100% {
-            transform: scale(1);
-        }
-    }
 }
 
 @media screen and (max-width: 1280px){
     #presentation {
+        .crobat {
+            animation: crobatTabAnimation 20s infinite linear;
+        }
+
         .title {
             font-size: 2.5em;
             
@@ -78,6 +73,10 @@
 
 @media screen and (max-width: 645px){
     #presentation {
+        .crobat {
+            animation: crobatMobAnimation 10s infinite linear;
+            margin: 1rem auto auto 4rem;
+        }
         .paragraph-link {
             font-size: 1em;
             font-weight: 700;
@@ -89,5 +88,113 @@
                 text-align: center;
             }
         }
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(1.05);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes crobatAnimation {
+    0% {
+        margin: 4rem auto auto 6rem;
+    }
+
+    12.5% {
+        margin: 20rem auto auto 10rem;
+    }
+
+    25% {
+        margin: 23rem auto auto 80rem;
+    }
+
+    37.5% {
+        margin: 5rem auto auto 65rem;
+    }
+
+    50% {
+        margin: -15rem auto auto 80rem;
+    }
+
+    62.5% {
+        margin: 0rem auto auto 55rem;
+    }
+
+    75% {
+        margin: 0rem auto auto 25rem;
+    }
+
+    87.5% {
+        margin: -15rem auto auto 6rem;
+    }
+
+    100% {
+        margin: 4rem auto auto 6rem;
+    }
+}
+
+@keyframes crobatTabAnimation {
+    0% {
+        margin: 4rem auto auto 6rem;
+    }
+
+    12.5% {
+        margin: 20rem auto auto 10rem;
+    }
+
+    25% {
+        margin: 10rem auto auto 15rem;
+    }
+
+    37.5% {
+        margin: 20rem auto auto 30rem;
+    }
+
+    50% {
+        margin: 0rem auto auto 20rem;
+    }
+
+    62.5% {
+        margin: 0rem auto auto 25rem;
+    }
+
+    75% {
+        margin: 0rem auto auto 15rem;
+    }
+
+    87.5% {
+        margin: -0rem auto auto 6rem;
+    }
+
+    100% {
+        margin: 4rem auto auto 6rem;
+    }
+}
+
+@keyframes crobatMobAnimation {
+    0% {
+        margin: 1rem auto auto 4rem;
+    }
+
+    25% {
+        margin: 12rem auto auto 4rem;
+    }
+
+    50% {
+        margin: 12rem auto auto 18rem;
+    }
+
+    75% {
+        margin: 1rem auto auto 18rem;
+    }
+
+    100% {
+        margin: 1rem auto auto 4rem;
     }
 }
