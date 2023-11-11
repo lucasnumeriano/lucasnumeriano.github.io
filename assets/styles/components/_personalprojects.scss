@@ -117,23 +117,36 @@
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 645px){
     #personal-projects {
-        .title {
-            font-size: 1.5em;
-        }
-        .see-all {
-            height: 1.5em;
-            margin: -2rem auto auto 80%;
-            width: 4em;
+        .title-and-link-projects {
+            .title {
+                font-size: 2em;
+            }
             .link-see-all {
-                font-size: .5em;
-                padding: .5em 0 0 1em;
+                width: 10em;
+                font-size: 1em;
             }
         }
         .base {
             .star-project {
-                margin: auto 0 0 10%;
+                margin: 10% auto 0 auto;
+                max-width: 21.25em;
+                max-height: 13.5em;
+                .link-star-project {
+                    font-size: 1.5em;
+                    margin: 40% auto;
+                }
+            }
+            .small-base {
+                .secondarys-projects {
+                    max-width: 21.25em;
+                    .name-and-description-proj {
+                        .link-project {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
             }
         }
     }
