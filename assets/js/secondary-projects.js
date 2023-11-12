@@ -27,4 +27,6 @@ document.querySelector(".small-base-2").innerHTML =
 
     addProject("fruta-e-fruto", "Fruta e Fruto", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("bootstrap"),"Landing page de uma página de receitas feito com bootstrap.", "fruta-e-fruto-preview") + 
 
-    addProject("nlw-10-copa", "NLW Copa", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("javascript"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "culturama-preview")    
+    addProject("nlw-10-copa", "NLW Copa", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("javascript"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "culturama-preview") +
+
+    addProject("culturama", "Culturama", addTechnologies("html5") + addTechnologies("css3"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "culturama-preview")

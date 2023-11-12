@@ -2,7 +2,9 @@ function addStarProject(linkName, iconName, name, iconTechnology) {
     return `
         <a href="https://github.com/Elasukou/${linkName}" target="_blank">
             <div class="star-project">
-                <img src="assets/images/${iconName}.svg" class="image-star-project">
+                <div class="zoom">
+                    <img src="assets/images/${iconName}.svg" class="image-star-project">
+                </div>
                 <div class="title-and-technology-project">
                     <h3 class="title-star-project">${name}</h3>
                     ${iconTechnology}

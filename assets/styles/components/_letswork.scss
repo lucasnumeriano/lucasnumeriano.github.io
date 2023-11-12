@@ -1,0 +1,67 @@
+#letswork {
+    display: flex;
+    justify-content: end;
+    .description {
+        display: flex;
+        flex-direction: column;
+        .text-letswork {
+            color: $font-color-3;
+            margin: 10em 0 0 8em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .link-letswork {
+            font-size: 4em;
+            font-weight: 700;
+            padding-left: 2em;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .front-end-dev {
+        width: 50em;
+        height: 30em;
+    }
+    .front-end-dev-mob {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #letswork {
+        padding-top: 5em;
+        flex-direction: column;
+        .description {
+            padding-bottom: 5em;
+            .text-letswork {
+                margin: auto;
+            }
+            .link-letswork {
+                font-size: 3em;
+                margin: auto;
+            }
+        }
+        .front-end-dev {
+            display: none;
+        }
+        .front-end-dev-mob {
+            display: block;
+            width: 100vw;
+        }
+    }
+}
+
+@media screen and (max-width: 645px) {
+    #letswork {
+        .description {
+            .link-letswork {
+                font-size: 2em;
+                text-align: center;
+                padding: 0;
+                padding: 0 1em 0 1em;
+                margin: auto;
+            }
+        }
+    }
+}

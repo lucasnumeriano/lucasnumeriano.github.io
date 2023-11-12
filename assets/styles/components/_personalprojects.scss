@@ -50,14 +50,25 @@
             .star-project {
                 align-items: start;
                 width: 40.25em;
-                height: 30em;
+                max-height: 35em;
                 display: flex;
                 flex-direction: column;
-                transition: transform .5s;
-                .image-star-project {
-                    width: max-content;
-                    height: 100%;
-                    opacity: 70%;
+                .zoom {
+                    overflow: hidden;
+                    border-radius: .5em;
+                    .image-star-project {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 70%;
+                        -moz-transition: all .5s;
+                        -webkit-transition: all .5s;
+                        transition: all .5s;
+                        &:hover {
+                            -moz-transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+                    }
                 }
                 .title-and-technology-project {
                     .title-star-project {
@@ -69,9 +80,6 @@
                         width: 1.5em;
                         padding: 0 .1em;
                     }
-                }
-                &:hover {
-                    transform: scale(1.02);
                 }
             }
         }
@@ -122,6 +130,7 @@
 
 @media screen and (max-width: 1280px){
     #personal-projects {
+        padding-bottom: 8em;
         .title-and-link-projects{
             .title {
             font-size: 2.5em;
@@ -152,6 +161,7 @@
 
 @media screen and (max-width: 645px){
     #personal-projects {
+        padding-bottom: 4em;
         .link-see-all-mobile {
             display: block;
         }
@@ -179,6 +189,7 @@
             .small-base-2 {
                 .secondarys-projects {
                     max-width: 21.25em;
+                    max-height: 6em;
                     .name-and-description-proj {
                         .title-project {
                             font-size: 1.2em;
