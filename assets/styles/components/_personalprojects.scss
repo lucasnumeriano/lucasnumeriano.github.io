@@ -2,6 +2,19 @@
     background-color: $background-color-3;
     display: flex;
     flex-direction: column;
+    .link-see-all-mobile {
+        display: none;
+        width: 8em;
+        height: 2em;
+        background-color: $background-color-4;
+        font: bold 1em "Poppins";
+        color: $font-color-3;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding-top: .5em;
+        margin: 2em auto;
+    }
     .title-and-link-projects {
         display: flex;
         flex-direction: row;
@@ -32,59 +45,69 @@
     .base {
         display: flex;
         flex-direction: row;
-        
-        .star-project {
-            max-width: 40.25em;
-            max-height: 23.5em;
-            border-radius: 1.6em;
-            background: url(../images/tabela-de-precos.svg) no-repeat;
+        .small-base-1 {
             margin: 5% auto 0 auto;
-            display: flex;
-            .link-star-project {
-                font-size: 1.8em;
-                font-weight: 700;
-                color: $font-color-1;
-                margin: 45% auto;
-                padding: 0 1em 0 1em;
+            .star-project {
+                align-items: start;
+                width: 40.25em;
+                height: 30em;
+                display: flex;
+                flex-direction: column;
+                transition: transform .5s;
+                .image-star-project {
+                    width: max-content;
+                    height: 100%;
+                    opacity: 70%;
+                }
+                .title-and-technology-project {
+                    .title-star-project {
+                        font-size: 1.5em;
+                        font-weight: 700;
+                        color: $font-color-1;
+                    }
+                    .iconTechnologyProject {
+                        width: 1.5em;
+                        padding: 0 .1em;
+                    }
+                }
                 &:hover {
-                    text-decoration: underline;
+                    transform: scale(1.02);
                 }
             }
-            &:hover {
-                border: .1em solid $font-color-1;
-            }
         }
-        
-        .small-base {
-            margin: 3% auto auto 0;
+
+        .small-base-2 {
+            margin: 3% auto;
             .secondarys-projects {
-                max-width: 40.25em;
-                max-height: 8em;
+                width: 35.25em;
+                height: 8em;
                 background-color: $background-color-4;
-                border-radius: 1.8em;
+                border-radius: .5em;
                 display: flex;
                 flex-direction: row;
                 margin-top: 5%;
+                transition: transform .5s;
                 &:hover {
-                    border: .1em solid $font-color-1;
+                    transform: scale(1.02);
                 }
 
                 .name-and-description-proj {
                     display: flex;
                     flex-direction: column;
-                    .link-project {
+                    .title-project {
                         font-size: 1.5em;
                         font-weight: 600;
                         color: $font-color-1;
-                        margin: 0.5em 0 0 1em;
-                        &:hover {
-                            text-decoration: underline;
-                        }
+                        margin: .5em 0 0 .8em;
                     }
-                    .project-description {
-                        font-weight: 400;
-                        color: $font-color-1;
-                        margin: 0 0 0 2em;
+                    .technologyProject{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1em;
+                        .iconTechnologyProject {
+                            width: 1.5em;
+                            padding: .1em;
+                        }
                     }
                 }
             
@@ -110,7 +133,17 @@
             padding: 0 auto 0 15%;
             margin: 0;
 
-            .small-base {
+            .small-base-1 {
+                .star-project {
+                    height: 28em;
+                    align-items: center;
+                    .title-and-technology-project {
+                        align-items: start;
+                    }
+                }
+            }
+
+            .small-base-2 {
                 margin: auto;
             }
         }
@@ -119,30 +152,35 @@
 
 @media screen and (max-width: 645px){
     #personal-projects {
+        .link-see-all-mobile {
+            display: block;
+        }
         .title-and-link-projects {
             .title {
                 font-size: 2em;
+                margin: 5% auto;
             }
             .link-see-all {
-                width: 10em;
-                font-size: 1em;
+                display: none;
             }
         }
         .base {
-            .star-project {
-                margin: 10% auto 0 auto;
-                max-width: 21.25em;
-                max-height: 13.5em;
-                .link-star-project {
-                    font-size: 1.5em;
-                    margin: 40% auto;
+            .small-base-1 {
+                .star-project {
+                    margin: 5% auto 0 auto;
+                    max-width: 21.25em;
+                    max-height: 21.5em;
+                    align-items: start;
+                    .title-star-project {
+                        font-size: 1.2em;
+                    }
                 }
             }
-            .small-base {
+            .small-base-2 {
                 .secondarys-projects {
                     max-width: 21.25em;
                     .name-and-description-proj {
-                        .link-project {
+                        .title-project {
                             font-size: 1.2em;
                         }
                     }

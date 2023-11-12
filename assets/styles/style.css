@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   margin: 0;
   padding: 0;
   font: normal normal 16px "Poppins", "Arial", sans-serif;
 }
-html a, body a {
+html body a {
   color: #000000;
   text-decoration: none;
 }
-html ul, body ul {
+html body ul {
   list-style: none;
 }
 
@@ -129,6 +132,7 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   min-height: 705px;
   overflow-x: hidden;
+  animation: appear 3s;
 }
 #presentation .crobat {
   position: absolute;
@@ -296,6 +300,19 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
 }
+#personal-projects .link-see-all-mobile {
+  display: none;
+  width: 8em;
+  height: 2em;
+  background-color: #2D2D2D;
+  font: bold 1em "Poppins";
+  color: #777777;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  margin: 2em auto;
+}
 #personal-projects .title-and-link-projects {
   display: flex;
   flex-direction: row;
@@ -325,61 +342,71 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
 }
-#personal-projects .base .star-project {
-  max-width: 40.25em;
-  max-height: 23.5em;
-  border-radius: 1.6em;
-  background: url(../images/tabela-de-precos.svg) no-repeat;
+#personal-projects .base .small-base-1 {
   margin: 5% auto 0 auto;
-  display: flex;
 }
-#personal-projects .base .star-project .link-star-project {
-  font-size: 1.8em;
+#personal-projects .base .small-base-1 .star-project {
+  align-items: start;
+  width: 40.25em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+}
+#personal-projects .base .small-base-1 .star-project .image-star-project {
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  opacity: 70%;
+}
+#personal-projects .base .small-base-1 .star-project .title-and-technology-project .title-star-project {
+  font-size: 1.5em;
   font-weight: 700;
   color: #FFFFFF;
-  margin: 45% auto;
-  padding: 0 1em 0 1em;
 }
-#personal-projects .base .star-project .link-star-project:hover {
-  text-decoration: underline;
+#personal-projects .base .small-base-1 .star-project .title-and-technology-project .iconTechnologyProject {
+  width: 1.5em;
+  padding: 0 0.1em;
 }
-#personal-projects .base .star-project:hover {
-  border: 0.1em solid #FFFFFF;
+#personal-projects .base .small-base-1 .star-project:hover {
+  transform: scale(1.02);
 }
-#personal-projects .base .small-base {
-  margin: 3% auto auto 0;
+#personal-projects .base .small-base-2 {
+  margin: 3% auto;
 }
-#personal-projects .base .small-base .secondarys-projects {
-  max-width: 40.25em;
-  max-height: 8em;
+#personal-projects .base .small-base-2 .secondarys-projects {
+  width: 35.25em;
+  height: 8em;
   background-color: #2D2D2D;
-  border-radius: 1.8em;
+  border-radius: 0.5em;
   display: flex;
   flex-direction: row;
   margin-top: 5%;
+  transition: transform 0.5s;
 }
-#personal-projects .base .small-base .secondarys-projects:hover {
-  border: 0.1em solid #FFFFFF;
+#personal-projects .base .small-base-2 .secondarys-projects:hover {
+  transform: scale(1.02);
 }
-#personal-projects .base .small-base .secondarys-projects .name-and-description-proj {
+#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj {
   display: flex;
   flex-direction: column;
 }
-#personal-projects .base .small-base .secondarys-projects .name-and-description-proj .link-project {
+#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
   font-size: 1.5em;
   font-weight: 600;
   color: #FFFFFF;
-  margin: 0.5em 0 0 1em;
+  margin: 0.5em 0 0 0.8em;
 }
-#personal-projects .base .small-base .secondarys-projects .name-and-description-proj .link-project:hover {
-  text-decoration: underline;
+#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
 }
-#personal-projects .base .small-base .secondarys-projects .name-and-description-proj .project-description {
-  font-weight: 400;
-  color: #FFFFFF;
-  margin: 0 0 0 2em;
+#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject .iconTechnologyProject {
+  width: 1.5em;
+  padding: 0.1em;
 }
-#personal-projects .base .small-base .secondarys-projects .project-preview {
+#personal-projects .base .small-base-2 .secondarys-projects .project-preview {
   border-radius: 0 1.8em 1.8em 0;
   max-width: 50%;
 }
@@ -394,31 +421,41 @@ body::-webkit-scrollbar-thumb {
     padding: 0 auto 0 15%;
     margin: 0;
   }
-  #personal-projects .base .small-base {
+  #personal-projects .base .small-base-1 .star-project {
+    height: 28em;
+    align-items: center;
+  }
+  #personal-projects .base .small-base-1 .star-project .title-and-technology-project {
+    align-items: start;
+  }
+  #personal-projects .base .small-base-2 {
     margin: auto;
   }
 }
 @media screen and (max-width: 645px) {
+  #personal-projects .link-see-all-mobile {
+    display: block;
+  }
   #personal-projects .title-and-link-projects .title {
     font-size: 2em;
+    margin: 5% auto;
   }
   #personal-projects .title-and-link-projects .link-see-all {
-    width: 10em;
-    font-size: 1em;
+    display: none;
   }
-  #personal-projects .base .star-project {
-    margin: 10% auto 0 auto;
+  #personal-projects .base .small-base-1 .star-project {
+    margin: 5% auto 0 auto;
     max-width: 21.25em;
-    max-height: 13.5em;
+    max-height: 21.5em;
+    align-items: start;
   }
-  #personal-projects .base .star-project .link-star-project {
-    font-size: 1.5em;
-    margin: 40% auto;
+  #personal-projects .base .small-base-1 .star-project .title-star-project {
+    font-size: 1.2em;
   }
-  #personal-projects .base .small-base .secondarys-projects {
+  #personal-projects .base .small-base-2 .secondarys-projects {
     max-width: 21.25em;
   }
-  #personal-projects .base .small-base .secondarys-projects .name-and-description-proj .link-project {
+  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
     font-size: 1.2em;
   }
 }
