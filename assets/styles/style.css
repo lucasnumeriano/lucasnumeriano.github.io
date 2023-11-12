@@ -492,6 +492,42 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
   }
 }
+footer {
+  background-color: #2D2D2D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+}
+footer .footer-logo {
+  width: 3em;
+}
+footer .footer-logo:hover {
+  opacity: 70%;
+}
+footer .footer-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2em 0 1em 0;
+  margin: auto;
+  width: 12em;
+}
+footer .footer-list .link-footer-list:hover {
+  opacity: 70%;
+}
+footer .line {
+  width: 85vw;
+}
+footer .text-footer {
+  color: #777777;
+}
+footer .back-to-the-top {
+  padding: 1em 0 1em 0;
+  color: #777777;
+  text-transform: uppercase;
+}
+
 #letswork {
   display: flex;
   justify-content: end;
