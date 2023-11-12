@@ -2,6 +2,10 @@
     background-color: $background-color-1;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    margin-top: -6.3em;
+    width: 100vw;
 
     .logo-link {
         padding: 1rem;
@@ -39,6 +43,10 @@
     display: none;
 }
 
+.active {
+    background-color: $background-color-3 !important;
+}
+
 @media screen and (max-width: 1280px) {
     #navbar{
         .nav-list{
@@ -60,6 +68,10 @@
 
     .mobile-menu {
         background-color: $background-color-1;
+        position: fixed;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
         .nav-list {
             display: flex;
             flex-direction: column;
@@ -86,8 +98,10 @@
 
 @media screen and (max-width:645px) {
     #navbar {
+        height: 6em;
+        margin-top: -6em;
         .logo-link {
-            width: 65%;
+            max-width: 45%;
         }
     }
 }

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6.3em;
 }
 html body {
   margin: 0;
@@ -29,6 +30,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #0A1920;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  margin-top: -6.3em;
+  width: 100vw;
 }
 #navbar .logo-link {
   padding: 1rem;
@@ -63,6 +68,10 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.active {
+  background-color: #0D0D0D !important;
+}
+
 @media screen and (max-width: 1280px) {
   #navbar .nav-list .component-nav-list {
     display: none;
@@ -78,6 +87,10 @@ body::-webkit-scrollbar-thumb {
   }
   .mobile-menu {
     background-color: #0A1920;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
   }
   .mobile-menu .nav-list {
     display: flex;
@@ -101,14 +114,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 645px) {
+  #navbar {
+    height: 6em;
+    margin-top: -6em;
+  }
   #navbar .logo-link {
-    width: 65%;
+    max-width: 45%;
   }
 }
 #banner {
   background-color: #1E4E64;
   height: 10%;
   width: 100%;
+  margin-top: 6.3em;
 }
 #banner .text-banner {
   color: #FFFFFF;
@@ -125,6 +143,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 1em;
     margin: 0 2rem 0 2em;
     text-align: center;
+  }
+}
+@media screen and (max-width: 645px) {
+  #banner {
+    margin-top: 6em;
   }
 }
 #presentation {

@@ -2,6 +2,7 @@
     background-color: $background-color-2;
     height: 10%;
     width: 100%;
+    margin-top: 6.3em;
 
     .text-banner {
         color: $font-color-1;
@@ -21,5 +22,11 @@
             margin: 0 2rem 0 2em;
             text-align: center;
         }
+    }
+}
+
+@media screen and (max-width: 645px) {
+    #banner {
+        margin-top: 6em;
     }
 }
