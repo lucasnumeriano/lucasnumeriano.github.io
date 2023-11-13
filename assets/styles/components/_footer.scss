@@ -35,3 +35,12 @@ footer {
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width:645px){
+    footer {
+        .text-footer {
+            width: 70%;
+            margin: auto;
+        }
+    }
+}

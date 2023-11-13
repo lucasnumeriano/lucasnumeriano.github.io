@@ -460,6 +460,9 @@ body::-webkit-scrollbar-thumb {
   #personal-projects .base .small-base-2 {
     margin: auto;
   }
+  #personal-projects .base .small-base-2 .secondarys-projects {
+    width: 75vh;
+  }
 }
 @media screen and (max-width: 645px) {
   #personal-projects {
@@ -528,6 +531,12 @@ footer .back-to-the-top {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 645px) {
+  footer .text-footer {
+    width: 70%;
+    margin: auto;
+  }
+}
 #letswork {
   display: flex;
   justify-content: end;
