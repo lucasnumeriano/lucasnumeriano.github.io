@@ -182,13 +182,6 @@ body::-webkit-scrollbar-thumb {
   min-height: 705px;
   overflow-x: hidden;
 }
-#presentation .crobat {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin: 4rem auto auto 6rem;
-  animation: crobatAnimation 60s infinite linear;
-}
 #presentation .if-mobile-on {
   display: none;
 }
@@ -231,11 +224,29 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
   color: #777777;
 }
+#presentation .bt-go-top {
+  background-color: rgba(37, 37, 37, 0.4470588235) !important;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  margin: 10% 0 0 95%;
+  position: fixed;
+  display: none;
+  z-index: 1;
+}
+#presentation .bt-go-top .link-bt-top {
+  display: flex;
+  justify-content: center;
+}
+#presentation .bt-go-top .link-bt-top .img-bt-top {
+  opacity: 70%;
+}
+#presentation .active {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1280px) {
-  #presentation .crobat {
-    animation: crobatTabAnimation 20s infinite linear;
-  }
   #presentation .title {
     font-size: 2.5em;
   }
@@ -247,13 +258,12 @@ body::-webkit-scrollbar-thumb {
   #presentation {
     background: #0A1920;
   }
+  #presentation .bt-go-top {
+    margin: 0 0 0 80%;
+  }
   #presentation .about-description {
     width: 90%;
     margin-top: 5%;
-  }
-  #presentation .crobat {
-    animation: crobatMobAnimation 10s infinite linear;
-    margin: 1rem auto auto 4rem;
   }
   #presentation .paragraph-link {
     font-size: 1em;
@@ -267,15 +277,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
 }
-@media screen and (max-width: 400px) {
-  #presentation .paragraph-link {
-    flex-direction: column;
-    align-items: center;
-  }
-  #presentation .paragraph-link .about-link {
-    padding: 1rem;
-  }
-}
 @keyframes jump {
   0% {
     transform: scale(1);
@@ -285,81 +286,6 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes crobatAnimation {
-  0% {
-    margin: 4rem auto auto 6rem;
-  }
-  12.5% {
-    margin: 20rem auto auto 10rem;
-  }
-  25% {
-    margin: 23rem auto auto 80rem;
-  }
-  37.5% {
-    margin: 5rem auto auto 65rem;
-  }
-  50% {
-    margin: -15rem auto auto 80rem;
-  }
-  62.5% {
-    margin: 0rem auto auto 55rem;
-  }
-  75% {
-    margin: 0rem auto auto 25rem;
-  }
-  87.5% {
-    margin: -15rem auto auto 6rem;
-  }
-  100% {
-    margin: 4rem auto auto 6rem;
-  }
-}
-@keyframes crobatTabAnimation {
-  0% {
-    margin: 4rem auto auto 6rem;
-  }
-  12.5% {
-    margin: 20rem auto auto 10rem;
-  }
-  25% {
-    margin: 10rem auto auto 15rem;
-  }
-  37.5% {
-    margin: 20rem auto auto 30rem;
-  }
-  50% {
-    margin: 0rem auto auto 20rem;
-  }
-  62.5% {
-    margin: 0rem auto auto 25rem;
-  }
-  75% {
-    margin: 0rem auto auto 15rem;
-  }
-  87.5% {
-    margin: 0rem auto auto 6rem;
-  }
-  100% {
-    margin: 4rem auto auto 6rem;
-  }
-}
-@keyframes crobatMobAnimation {
-  0% {
-    margin: 1rem auto auto 4rem;
-  }
-  25% {
-    margin: 12rem auto auto 4rem;
-  }
-  50% {
-    margin: 12rem auto auto 18rem;
-  }
-  75% {
-    margin: 1rem auto auto 18rem;
-  }
-  100% {
-    margin: 1rem auto auto 4rem;
   }
 }
 #personal-projects {
