@@ -3,13 +3,16 @@
     background-size: cover;
     min-height: 705px;
     overflow-x: hidden;
-    animation: appear 3s;
     .crobat {
         position: absolute;
         width: 50px;
         height: 50px;
         margin: 4rem auto auto 6rem;
         animation: crobatAnimation 60s infinite linear;
+    }
+
+    .if-mobile-on {
+        display: none;
     }
 
     .title {
@@ -74,6 +77,11 @@
 
 @media screen and (max-width: 645px){
     #presentation {
+        background: $background-color-1;
+        .about-description {
+            width: 90%;
+            margin-top: 5%;
+        }
         .crobat {
             animation: crobatMobAnimation 10s infinite linear;
             margin: 1rem auto auto 4rem;
@@ -87,6 +95,18 @@
                 font-weight: 700;
                 padding: 0 1rem 0 1rem;
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    #presentation {
+        .paragraph-link {
+            flex-direction: column;
+            align-items: center;
+            .about-link {
+                padding: 1rem;    
             }
         }
     }

@@ -2,7 +2,13 @@
     background-color: $background-color-2;
     height: 10%;
     width: 100%;
-    margin-top: 6.3em;
+    margin-top: 6.4em;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    animation: colorBorder infinite linear 8s;
 
     .text-banner {
         color: $font-color-1;
@@ -28,5 +34,21 @@
 @media screen and (max-width: 645px) {
     #banner {
         margin-top: 6em;
+    }
+}
+
+@keyframes colorBorder {
+    0% {
+        border-color: #ffffff;
+    } 20% {
+        border-color: #00ffff;
+    } 40% {
+        border-color: #000BE6;
+    } 60% {
+        border-color: #000BE6;
+    } 80% {
+        border-color: #00ffff;
+    } 100% {
+        border-color: #ffffff;
     }
 }

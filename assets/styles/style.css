@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   position: fixed;
   z-index: 1;
-  margin-top: -6.3em;
+  margin-top: -6.4em;
   width: 100vw;
 }
 #navbar .logo-link {
@@ -126,7 +126,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #1E4E64;
   height: 10%;
   width: 100%;
-  margin-top: 6.3em;
+  margin-top: 6.4em;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  animation: colorBorder infinite linear 8s;
 }
 #banner .text-banner {
   color: #FFFFFF;
@@ -150,12 +156,31 @@ body::-webkit-scrollbar-thumb {
     margin-top: 6em;
   }
 }
+@keyframes colorBorder {
+  0% {
+    border-color: #ffffff;
+  }
+  20% {
+    border-color: #00ffff;
+  }
+  40% {
+    border-color: #000BE6;
+  }
+  60% {
+    border-color: #000BE6;
+  }
+  80% {
+    border-color: #00ffff;
+  }
+  100% {
+    border-color: #ffffff;
+  }
+}
 #presentation {
   background: url(../images/background.svg) 5% center no-repeat;
   background-size: cover;
   min-height: 705px;
   overflow-x: hidden;
-  animation: appear 3s;
 }
 #presentation .crobat {
   position: absolute;
@@ -163,6 +188,9 @@ body::-webkit-scrollbar-thumb {
   height: 50px;
   margin: 4rem auto auto 6rem;
   animation: crobatAnimation 60s infinite linear;
+}
+#presentation .if-mobile-on {
+  display: none;
 }
 #presentation .title {
   color: #FFFFFF;
@@ -216,6 +244,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 645px) {
+  #presentation {
+    background: #0A1920;
+  }
+  #presentation .about-description {
+    width: 90%;
+    margin-top: 5%;
+  }
   #presentation .crobat {
     animation: crobatMobAnimation 10s infinite linear;
     margin: 1rem auto auto 4rem;
@@ -230,6 +265,15 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
     padding: 0 1rem 0 1rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  #presentation .paragraph-link {
+    flex-direction: column;
+    align-items: center;
+  }
+  #presentation .paragraph-link .about-link {
+    padding: 1rem;
   }
 }
 @keyframes jump {
