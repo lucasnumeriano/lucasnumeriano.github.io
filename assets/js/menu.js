@@ -8,6 +8,7 @@ const linkMenu4 = document.querySelector('.link-4')
 
 const menu = document.querySelector('#navbar')
 
+//function for responsive menu
 buttonMn.addEventListener('click', () => {
     if(mobileMn.classList.contains('open')){
         mobileMn.classList.remove('open')
@@ -16,6 +17,8 @@ buttonMn.addEventListener('click', () => {
     }
 })
 
+
+//function for close menu with click event
 linkMenu1.addEventListener('click', () => {
     mobileMn.classList.remove('open')
 })
@@ -32,6 +35,8 @@ linkMenu4.addEventListener('click', () => {
     mobileMn.classList.remove('open')
 })
 
+
+//unction to change color from menu to scroll event 
 window.addEventListener('scroll', () => {
     if (scrollY > 10) {
         menu.classList.add('active')

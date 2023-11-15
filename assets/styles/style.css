@@ -48,6 +48,31 @@ body::-webkit-scrollbar-thumb {
 #navbar .nav-list {
   display: flex;
 }
+#navbar .nav-list .dropdown:hover .menu-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar .nav-list .dropdown .menu-dropdown {
+  position: absolute;
+  display: none;
+  background-color: #193E4F;
+  width: 10em;
+  height: 15em;
+  margin: 1em auto auto -2.5em;
+  padding: 1em;
+}
+#navbar .nav-list .dropdown .menu-dropdown .link-dropdown {
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+#navbar .nav-list .dropdown .menu-dropdown .link-dropdown:hover {
+  background-color: #255E78;
+}
 #navbar .nav-list .component-nav-list {
   padding: 1.2rem 2rem;
 }
@@ -59,6 +84,9 @@ body::-webkit-scrollbar-thumb {
 #navbar .nav-list .component-nav-list .link-nav-list:hover {
   color: #777777;
   text-decoration: underline;
+}
+#navbar .nav-list .component-nav-list .link-nav-list .img-dropdown {
+  width: 10%;
 }
 #navbar .mobile-menu-icon {
   display: none;

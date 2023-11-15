@@ -20,6 +20,34 @@
 
     .nav-list {
         display: flex;
+        .dropdown {
+            &:hover .menu-dropdown {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .menu-dropdown {
+                position: absolute;
+                display: none;
+                background-color: $background-color-7;
+                width: 10em;
+                height: 15em;
+                margin: 1em auto auto -2.5em;
+                padding: 1em;
+
+                .link-dropdown {
+                    color: $font-color-1;
+                    font-size: 1em;
+                    font-weight: 500;
+                    padding: .5em;
+                    border-radius: .5em;
+                    &:hover {
+                        background-color: $background-color-8;
+                    }
+                }
+            }
+        }
         .component-nav-list {
             padding: 1.2rem 2rem;
             .link-nav-list {
@@ -29,6 +57,9 @@
                 &:hover {
                     color: $font-color-3;
                     text-decoration: underline;
+                }
+                .img-dropdown {
+                    width: 10%;
                 }
             }
         }
