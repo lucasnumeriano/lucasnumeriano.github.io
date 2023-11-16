@@ -20,7 +20,6 @@ function addTechnologies(technology) {
         <img src="assets/images/${technology}.svg" class="iconTechnologyProject">
     `
 }
-//<p class="project-description">${description}</p>
 
 document.querySelector(".small-base-2").innerHTML =
     addProject("alura-spa", "Alura SPA", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("sass"), "Landing Page de um SPA desenvolvido com SASS.", "alura-spa-preview") +
