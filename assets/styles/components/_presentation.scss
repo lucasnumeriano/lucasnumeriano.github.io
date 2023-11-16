@@ -49,7 +49,7 @@
             }
         }
     }
-    .bt-go-top {
+    .button-back-top {
         background-color: $background-color-6 !important;
         border-radius: 50%;
         width: 3.5em;
@@ -58,10 +58,10 @@
         position: fixed;
         display: none;
         z-index: 1;
-        .link-bt-top {
+        .link-button-back-top {
             display: flex;
             justify-content: center;
-            .img-bt-top {
+            .image-button-back-top {
                 opacity: 70%;
             }
         }

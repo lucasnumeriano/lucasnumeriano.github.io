@@ -1,9 +1,9 @@
-const btGoTop = document.querySelector('.bt-go-top')
+const buttonBackTop = document.querySelector('.button-back-top')
 
 window.addEventListener('scroll', () => {
     if (scrollY > 300) {
-        btGoTop.classList.add('active')
+        buttonBackTop.classList.add('active')
     } else {
-        btGoTop.classList.remove('active')
+        buttonBackTop.classList.remove('active')
     }
 })

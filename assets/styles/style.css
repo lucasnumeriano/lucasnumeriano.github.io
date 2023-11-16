@@ -252,7 +252,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
   color: #777777;
 }
-#presentation .bt-go-top {
+#presentation .button-back-top {
   background-color: rgba(37, 37, 37, 0.4470588235) !important;
   border-radius: 50%;
   width: 3.5em;
@@ -262,11 +262,11 @@ body::-webkit-scrollbar-thumb {
   display: none;
   z-index: 1;
 }
-#presentation .bt-go-top .link-bt-top {
+#presentation .button-back-top .link-button-back-top {
   display: flex;
   justify-content: center;
 }
-#presentation .bt-go-top .link-bt-top .img-bt-top {
+#presentation .button-back-top .link-button-back-top .image-button-back-top {
   opacity: 70%;
 }
 #presentation .active {
