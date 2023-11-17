@@ -100,6 +100,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #0D0D0D !important;
 }
 
+.navbar-2 {
+  margin-top: 0 !important;
+  z-index: 2 !important;
+}
+
 @media screen and (max-width: 1280px) {
   #navbar .nav-list .component-nav-list {
     display: none;
@@ -136,6 +141,9 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8em;
     font-weight: 500;
     color: #FFFFFF;
+  }
+  .mobile-menu-2 {
+    margin-top: 5em;
   }
   .open {
     display: block;
@@ -595,5 +603,41 @@ footer .back-to-the-top {
     padding: 0;
     padding: 0 1em 0 1em;
     margin: auto;
+  }
+}
+#aboutme {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin: 10em 20vw 0 20vw;
+  width: 60vw;
+}
+#aboutme .title-and-description-about-me {
+  text-align: center;
+  padding: 0 0 0 5em;
+}
+#aboutme .title-and-description-about-me .title {
+  font-size: 2.5em;
+}
+
+@media screen and (max-width: 1280px) {
+  #aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+  #aboutme .personal-photo {
+    width: 45%;
+  }
+  #aboutme .title-and-description-about-me {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 645px) {
+  #aboutme {
+    width: 90vw;
+    margin: 10em 5vw 0 5vw;
+  }
+  #aboutme .title-and-description-about-me .title {
+    font-size: 2em;
   }
 }/*# sourceMappingURL=style.css.map */
