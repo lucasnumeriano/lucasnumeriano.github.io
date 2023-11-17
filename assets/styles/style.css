@@ -16,6 +16,27 @@ html body ul {
   list-style: none;
 }
 
+.title {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+.title-white {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1280px) {
+  .title, .title-white {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 645px) {
+  .title, .title-white {
+    font-size: 2em;
+  }
+}
 body::-webkit-scrollbar {
   width: 6px;
 }
@@ -100,11 +121,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #0D0D0D !important;
 }
 
-.navbar-2 {
-  margin-top: 0 !important;
-  z-index: 2 !important;
-}
-
 @media screen and (max-width: 1280px) {
   #navbar .nav-list .component-nav-list {
     display: none;
@@ -141,9 +157,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8em;
     font-weight: 500;
     color: #FFFFFF;
-  }
-  .mobile-menu-2 {
-    margin-top: 5em;
   }
   .open {
     display: block;
@@ -265,7 +278,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   width: 3.5em;
   height: 3.5em;
-  margin: 10% 0 0 95%;
+  margin: 10% 0 0 90%;
   position: fixed;
   display: none;
   z-index: 1;
@@ -294,7 +307,7 @@ body::-webkit-scrollbar-thumb {
   #presentation {
     background: #0A1920;
   }
-  #presentation .bt-go-top {
+  #presentation .button-back-top {
     margin: 0 0 0 80%;
   }
   #presentation .about-description {
@@ -347,9 +360,6 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
 }
 #personal-projects .title-and-link-projects .title {
-  color: #FFFFFF;
-  font-size: 3.5em;
-  font-weight: 700;
   margin: 5% auto 0 5%;
 }
 #personal-projects .title-and-link-projects .link-see-all {
@@ -412,6 +422,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #2D2D2D;
   border-radius: 0.5em;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   margin-top: 5%;
   transition: transform 0.5s;
@@ -447,9 +458,6 @@ body::-webkit-scrollbar-thumb {
   #personal-projects {
     padding-bottom: 8em;
   }
-  #personal-projects .title-and-link-projects .title {
-    font-size: 2.5em;
-  }
   #personal-projects .base {
     display: flex;
     flex-direction: column;
@@ -457,6 +465,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
   #personal-projects .base .small-base-1 .star-project {
+    width: 75vw;
     height: 28em;
     align-items: center;
   }
@@ -467,7 +476,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
   }
   #personal-projects .base .small-base-2 .secondarys-projects {
-    width: 75vh;
+    width: 75vw;
   }
 }
 @media screen and (max-width: 645px) {
@@ -478,7 +487,6 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   #personal-projects .title-and-link-projects .title {
-    font-size: 2em;
     margin: 5% auto;
   }
   #personal-projects .title-and-link-projects .link-see-all {
@@ -486,7 +494,7 @@ body::-webkit-scrollbar-thumb {
   }
   #personal-projects .base .small-base-1 .star-project {
     margin: 5% auto 0 auto;
-    max-width: 21.25em;
+    width: 90vw;
     max-height: 21.5em;
     align-items: start;
   }
@@ -494,7 +502,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
   }
   #personal-projects .base .small-base-2 .secondarys-projects {
-    max-width: 21.25em;
+    width: 90vw;
     max-height: 6em;
   }
   #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
@@ -608,16 +616,13 @@ footer .back-to-the-top {
 #aboutme {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  margin: 10em 20vw 0 20vw;
+  margin: 5em auto 0 auto;
   width: 60vw;
+  padding-bottom: 5em;
 }
 #aboutme .title-and-description-about-me {
   text-align: center;
   padding: 0 0 0 5em;
-}
-#aboutme .title-and-description-about-me .title {
-  font-size: 2.5em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -626,7 +631,7 @@ footer .back-to-the-top {
     align-items: center;
   }
   #aboutme .personal-photo {
-    width: 45%;
+    width: 35%;
   }
   #aboutme .title-and-description-about-me {
     padding: 0;
@@ -635,9 +640,45 @@ footer .back-to-the-top {
 @media screen and (max-width: 645px) {
   #aboutme {
     width: 90vw;
-    margin: 10em 5vw 0 5vw;
+    margin: 5em auto 0 auto;
   }
-  #aboutme .title-and-description-about-me .title {
-    font-size: 2em;
+}
+#education {
+  background-color: #ECECEC;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#education .title {
+  margin: 0 auto 0 5%;
+}
+#education .faculty {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  margin: auto auto 0 5%;
+}
+#education .faculty .title-and-description-faculty {
+  padding: 1em;
+}
+#education .faculty .title-and-description-faculty .faculty-title {
+  margin: 0;
+}
+#education .faculty .title-and-description-faculty .faculty-description {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+#education .faculty .title-and-description-faculty .faculty-description .faculty-data {
+  color: #777777;
+}
+
+@media screen and (max-width: 645px) {
+  #education {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #education .faculty {
+    text-align: start;
   }
 }/*# sourceMappingURL=style.css.map */

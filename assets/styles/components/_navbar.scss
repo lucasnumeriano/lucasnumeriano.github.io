@@ -78,11 +78,6 @@
     background-color: $background-color-3 !important;
 }
 
-.navbar-2 {
-    margin-top: 0 !important;
-    z-index: 2 !important;
-}
-
 @media screen and (max-width: 1280px) {
     #navbar{
         .nav-list{
@@ -125,10 +120,6 @@
                 }
             }
         }
-    }
-
-    .mobile-menu-2 {
-        margin-top: 5em;
     }
 
     .open {

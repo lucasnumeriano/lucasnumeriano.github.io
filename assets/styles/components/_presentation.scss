@@ -54,7 +54,7 @@
         border-radius: 50%;
         width: 3.5em;
         height: 3.5em;
-        margin: 10% 0 0 95%;
+        margin: 10% 0 0 90%;
         position: fixed;
         display: none;
         z-index: 1;
@@ -88,7 +88,7 @@
 @media screen and (max-width: 645px){
     #presentation {
         background: $background-color-1;
-        .bt-go-top {
+        .button-back-top {
             margin: 0 0 0 80%;
         }
         .about-description {

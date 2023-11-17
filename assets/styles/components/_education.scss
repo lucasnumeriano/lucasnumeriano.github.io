@@ -1,0 +1,39 @@
+#education {
+    background-color: $background-color-9;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .title {
+        margin: 0 auto 0 5%;
+    }
+    .faculty {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        margin: auto auto 0 5%;
+        .title-and-description-faculty {
+            padding: 1em;
+            .faculty-title {
+                margin: 0;
+            }
+            .faculty-description {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                .faculty-data {
+                    color: $font-color-3;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 645px){
+    #education {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        .faculty {
+            text-align: start;
+        }
+    }    
+}

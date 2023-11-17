@@ -1,15 +1,12 @@
 #aboutme {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    margin: 10em 20vw 0 20vw;
+    margin: 5em auto 0 auto;
     width: 60vw;
+    padding-bottom: 5em;
     .title-and-description-about-me {
         text-align: center;
         padding: 0 0 0 5em;
-        .title {
-            font-size: 2.5em;
-        }
     }
 }
 
@@ -18,7 +15,7 @@
         flex-direction: column;
         align-items: center;
         .personal-photo {
-            width: 45%;
+            width: 35%;
         }
         .title-and-description-about-me {
             padding: 0;
@@ -29,11 +26,6 @@
 @media screen and (max-width: 645px){
     #aboutme {
         width: 90vw;
-        margin: 10em 5vw 0 5vw;
-        .title-and-description-about-me {
-            .title {
-                font-size: 2em;
-            }
-        }
+        margin: 5em auto 0 auto;
     }
 }

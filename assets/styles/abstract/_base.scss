@@ -16,3 +16,26 @@ html {
         }
     }
 }
+
+.title {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.title-white {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: $font-color-1;
+}
+
+@media screen and (max-width: 1280px){
+    .title, .title-white {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width:645px){
+    .title, .title-white {
+        font-size: 2em;
+    }
+}

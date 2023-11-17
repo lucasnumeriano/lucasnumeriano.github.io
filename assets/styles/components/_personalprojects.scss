@@ -19,9 +19,6 @@
         display: flex;
         flex-direction: row;
         .title {
-            color: $font-color-1;
-            font-size: 3.5em;
-            font-weight: 700;
             margin: 5% auto 0 5%;
         }
 
@@ -92,6 +89,7 @@
                 background-color: $background-color-4;
                 border-radius: .5em;
                 display: flex;
+                justify-content: space-between;
                 flex-direction: row;
                 margin-top: 5%;
                 transition: transform .5s;
@@ -131,11 +129,6 @@
 @media screen and (max-width: 1280px){
     #personal-projects {
         padding-bottom: 8em;
-        .title-and-link-projects{
-            .title {
-            font-size: 2.5em;
-            }
-        }
         .base {
             display: flex;
             flex-direction: column;
@@ -144,6 +137,7 @@
 
             .small-base-1 {
                 .star-project {
+                    width: 75vw;
                     height: 28em;
                     align-items: center;
                     .title-and-technology-project {
@@ -154,7 +148,7 @@
 
             .small-base-2 {
                 .secondarys-projects {
-                    width: 75vh;
+                    width: 75vw;
                 }
                 margin: auto;
             }
@@ -170,7 +164,6 @@
         }
         .title-and-link-projects {
             .title {
-                font-size: 2em;
                 margin: 5% auto;
             }
             .link-see-all {
@@ -181,7 +174,7 @@
             .small-base-1 {
                 .star-project {
                     margin: 5% auto 0 auto;
-                    max-width: 21.25em;
+                    width: 90vw;
                     max-height: 21.5em;
                     align-items: start;
                     .title-star-project {
@@ -191,7 +184,7 @@
             }
             .small-base-2 {
                 .secondarys-projects {
-                    max-width: 21.25em;
+                    width: 90vw;
                     max-height: 6em;
                     .name-and-description-proj {
                         .title-project {
