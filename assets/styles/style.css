@@ -509,6 +509,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
   }
 }
+#certifications {
+  text-align: center;
+}
+
 footer {
   background-color: #2D2D2D;
   display: flex;

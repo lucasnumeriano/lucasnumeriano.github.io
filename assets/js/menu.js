@@ -3,7 +3,7 @@ const mobileMn = document.querySelector('.mobile-menu')
 
 const menu = document.querySelector('#navbar')
 
-//function to activate mobile menu
+//function to activate mobil e menu
 buttonMn.addEventListener('click', () => {
     if(mobileMn.classList.contains('open')){
         mobileMn.classList.remove('open')
