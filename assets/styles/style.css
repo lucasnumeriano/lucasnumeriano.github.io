@@ -511,6 +511,50 @@ body::-webkit-scrollbar-thumb {
 }
 #certifications {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#certifications .course-area {
+  display: flex;
+  flex-direction: row;
+}
+#certifications .course-area .card {
+  background-color: #2D2D2D;
+  border-radius: 0.5em;
+  margin: 0 1em 0 1em;
+  min-width: 27em;
+  transition: transform 0.5s;
+}
+#certifications .course-area .card:hover {
+  transform: scale(1.02);
+}
+#certifications .course-area .card .school {
+  color: #FFFFFF;
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0.7em;
+}
+#certifications .course-area .card .course {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: #FFFFFF;
+}
+#certifications .course-area .card .course .image-course {
+  width: 5em;
+  padding: 0 1em 0 1em;
+}
+#certifications .course-area .card .course .title-course {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: -4.5em 0 0 0;
+}
+#certifications .course-area .card .course .description-course {
+  width: 60%;
+  text-align: start;
+  margin: 1em 8em auto;
 }
 
 footer {
@@ -558,6 +602,7 @@ footer .back-to-the-top {
 #letswork {
   display: flex;
   justify-content: end;
+  padding-top: 5em;
 }
 #letswork .description {
   display: flex;
