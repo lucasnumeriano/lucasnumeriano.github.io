@@ -523,38 +523,54 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0.5em;
   margin: 0 1em 0 1em;
   min-width: 27em;
+  max-width: 27em;
+  min-height: 10em;
+  max-height: 10em;
   transition: transform 0.5s;
 }
 #certifications .course-area .card:hover {
   transform: scale(1.02);
 }
-#certifications .course-area .card .school {
-  color: #FFFFFF;
-  font-size: 1.1em;
-  font-weight: 300;
-  margin: 0;
-  padding: 0.7em;
-}
 #certifications .course-area .card .course {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
   color: #FFFFFF;
 }
 #certifications .course-area .card .course .image-course {
-  width: 5em;
-  padding: 0 1em 0 1em;
+  border-radius: 0.5em 0 0 0;
+  min-width: 5.75em;
+  max-width: 5.75em;
+  height: 100%;
 }
-#certifications .course-area .card .course .title-course {
-  font-size: 1.2em;
+#certifications .course-area .card .course .specifications {
+  margin: 0;
+  text-align: start;
+}
+#certifications .course-area .card .course .specifications .title-course {
+  font-size: 1em;
   font-weight: 600;
   color: #FFFFFF;
-  margin: -4.5em 0 0 0;
+  padding: 0.5em;
+  margin: 0;
 }
-#certifications .course-area .card .course .description-course {
-  width: 60%;
-  text-align: start;
-  margin: 1em 8em auto;
+#certifications .course-area .card .course .specifications .school {
+  font-size: 1em;
+  font-weight: 100;
+  padding-left: 0.5em;
+  margin: 0;
+}
+#certifications .course-area .card .course .specifications .course-specifications {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin: 0;
+}
+#certifications .course-area .card .course .specifications .date {
+  padding-left: 0.5em;
+}
+#certifications .course-area .card .course .specifications .code {
+  min-width: 150%;
+  margin: 1em -5.3em auto;
 }
 
 footer {
