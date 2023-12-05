@@ -6,11 +6,13 @@ html {
 html body {
   margin: 0;
   padding: 0;
+  cursor: url("../images/navigation-arrow-duotone.svg"), default;
   font: normal normal 16px "Poppins", "Arial", sans-serif;
 }
 html body a {
   color: #000000;
   text-decoration: none;
+  cursor: url("../images/hand-pointing-duotone.svg"), pointer;
 }
 html body ul {
   list-style: none;
@@ -440,17 +442,23 @@ body::-webkit-scrollbar-thumb {
   color: #FFFFFF;
   margin: 0.5em 0 0 0.8em;
 }
+#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .text-project {
+  color: white;
+  margin: 0 auto 0 1.5em;
+  padding: 0;
+  font-size: 0.8em;
+}
 #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
   display: flex;
   flex-direction: row;
-  padding: 1em;
+  padding: 1em 1em;
 }
 #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject .iconTechnologyProject {
   width: 1.5em;
   padding: 0.1em;
 }
 #personal-projects .base .small-base-2 .secondarys-projects .project-preview {
-  border-radius: 0 1.8em 1.8em 0;
+  border-radius: 0 0.5em 0.5em 0;
   max-width: 50%;
 }
 
@@ -507,6 +515,12 @@ body::-webkit-scrollbar-thumb {
   }
   #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
     font-size: 1.2em;
+  }
+  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .text-project {
+    margin: 0 auto 0 1.2em;
+  }
+  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
+    padding: 0.5em 0.8em;
   }
 }
 #certifications {

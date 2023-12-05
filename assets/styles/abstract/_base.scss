@@ -6,10 +6,12 @@ html {
     body {
         margin: 0;
         padding: 0;
+        cursor: url("../images/navigation-arrow-duotone.svg"), default;
         font: normal normal 16px 'Poppins', 'Arial', sans-serif;
         a {
             color: $font-color-4;
             text-decoration: none;
+            cursor: url("../images/hand-pointing-duotone.svg"), pointer;
         }
         ul {
             list-style: none;

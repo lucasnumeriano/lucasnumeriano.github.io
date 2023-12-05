@@ -4,6 +4,7 @@ function addProject(linkName, name, iconTechnology, description, namePhoto,) {
             <div class="secondarys-projects">
                     <div class="name-and-description-proj">
                         <h3 class="title-project">${name}.</h3>
+                        <p class="text-project">Veja mais no meu Github</p>
                         <div class="technologyProject">
                             ${iconTechnology}
                         </div>
@@ -26,6 +27,6 @@ document.querySelector(".small-base-2").innerHTML =
 
     addProject("fruta-e-fruto", "Fruta e Fruto", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("bootstrap"),"Landing page de uma página de receitas feito com bootstrap.", "fruta-e-fruto-preview") + 
 
-    addProject("nlw-10-copa", "NLW Copa", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("javascript"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "culturama-preview") +
+    addProject("nlw-10-copa", "NLW Copa", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("javascript"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "nlw-preview") +
 
-    addProject("culturama", "Culturama", addTechnologies("html5") + addTechnologies("css3"), "Projeto feito no evento da nlw copa promovido pela rocktseat. Este site mostra as melhores partidas que a fases de grupo da copa do mundo do Qatar 2022 poderá ter. ", "culturama-preview")
+    addProject("projeto-android", "Projeto Android", addTechnologies("html5") + addTechnologies("css3"), "Projeto feito no modulo 2 do curso de html5 e css3 do Curso em Vídeo. ", "projeto-android-preview")
