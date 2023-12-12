@@ -20,5 +20,5 @@ function addTechnologies(technology) {
     `
 }
 
-document.querySelector(".small-base-1").innerHTML = 
+document.querySelector("#small-base-1").innerHTML = 
     addStarProject("pricing-table", "prewie-pricing-table", "Desafio da tabela de preços rocketseat.", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("bootstrap"))

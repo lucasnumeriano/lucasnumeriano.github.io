@@ -21,7 +21,7 @@
         }
     }
 
-    .about-description {
+    #about-description {
         color: $font-color-1;
         display: flex;
         font-size: 1em;
@@ -31,7 +31,7 @@
         width: 50%;
     }
 
-    .paragraph-link {
+    #presentation-link {
         color: $font-color-1;
         display: flex;
         font-size: 1.5em;
@@ -79,7 +79,7 @@
             
         }
 
-        .about-description {
+        #about-description {
             width: 60%;
         }
     }
@@ -91,12 +91,12 @@
         .button-back-top {
             margin: 0 0 0 80%;
         }
-        .about-description {
+        #about-description {
             width: 90%;
             margin-top: 5%;
         }
 
-        .paragraph-link {
+        #presentation-link {
             font-size: 1em;
             font-weight: 700;
             padding: 1rem;

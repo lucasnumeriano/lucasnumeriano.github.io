@@ -39,10 +39,10 @@
         }
     }
 
-    .base {
+    #base {
         display: flex;
         flex-direction: row;
-        .small-base-1 {
+        #small-base-1 {
             margin: 5% auto 0 auto;
             .star-project {
                 align-items: start;
@@ -81,7 +81,7 @@
             }
         }
 
-        .small-base-2 {
+        #small-base-2 {
             margin: 3% auto;
             .secondarys-projects {
                 width: 35.25em;
@@ -135,13 +135,13 @@
 @media screen and (max-width: 1280px){
     #personal-projects {
         padding-bottom: 8em;
-        .base {
+        #base {
             display: flex;
             flex-direction: column;
             padding: 0 auto 0 15%;
             margin: 0;
 
-            .small-base-1 {
+            #small-base-1 {
                 .star-project {
                     width: 75vw;
                     height: 28em;
@@ -152,7 +152,7 @@
                 }
             }
 
-            .small-base-2 {
+            #small-base-2 {
                 .secondarys-projects {
                     width: 75vw;
                 }
@@ -176,8 +176,8 @@
                 display: none;
             }
         }
-        .base {
-            .small-base-1 {
+        #base {
+            #small-base-1 {
                 .star-project {
                     margin: 5% auto 0 auto;
                     width: 90vw;
@@ -188,7 +188,7 @@
                     }
                 }
             }
-            .small-base-2 {
+            #small-base-2 {
                 .secondarys-projects {
                     width: 90vw;
                     max-height: 6em;

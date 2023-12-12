@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6.3em;
+  scroll-padding-top: 6em;
 }
 html body {
   margin: 0;
@@ -40,7 +40,7 @@ html body ul {
   }
 }
 body::-webkit-scrollbar {
-  width: 6px;
+  width: 2px;
 }
 body::-webkit-scrollbar-track {
   background: #0D0D0D;
@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb {
   border-style: solid;
   animation: colorBorder infinite linear 8s;
 }
-#banner .text-banner {
+#banner #text-banner {
   color: #FFFFFF;
   display: flex;
   font-size: 1.15em;
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1280px) {
-  #banner .text-banner {
+  #banner #text-banner {
     font-size: 1em;
     margin: 0 2rem 0 2em;
     text-align: center;
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb {
 #presentation .title span {
   color: #49BDF2;
 }
-#presentation .about-description {
+#presentation #about-description {
   color: #FFFFFF;
   display: flex;
   font-size: 1em;
@@ -257,7 +257,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   width: 50%;
 }
-#presentation .paragraph-link {
+#presentation #presentation-link {
   color: #FFFFFF;
   display: flex;
   font-size: 1.5em;
@@ -265,13 +265,13 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   padding: 2rem;
 }
-#presentation .paragraph-link .about-link {
+#presentation #presentation-link .about-link {
   color: #FFFFFF;
   font-size: 1em;
   font-weight: 700;
   padding: 0 2rem 0 2rem;
 }
-#presentation .paragraph-link .about-link:hover {
+#presentation #presentation-link .about-link:hover {
   text-decoration: underline;
   color: #777777;
 }
@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
   #presentation .title {
     font-size: 2.5em;
   }
-  #presentation .about-description {
+  #presentation #about-description {
     width: 60%;
   }
 }
@@ -312,16 +312,16 @@ body::-webkit-scrollbar-thumb {
   #presentation .button-back-top {
     margin: 0 0 0 80%;
   }
-  #presentation .about-description {
+  #presentation #about-description {
     width: 90%;
     margin-top: 5%;
   }
-  #presentation .paragraph-link {
+  #presentation #presentation-link {
     font-size: 1em;
     font-weight: 700;
     padding: 1rem;
   }
-  #presentation .paragraph-link .about-link {
+  #presentation #presentation-link .about-link {
     font-size: 1em;
     font-weight: 700;
     padding: 0 1rem 0 1rem;
@@ -379,46 +379,46 @@ body::-webkit-scrollbar-thumb {
 #personal-projects .title-and-link-projects .link-see-all:hover {
   text-decoration: underline;
 }
-#personal-projects .base {
+#personal-projects #base {
   display: flex;
   flex-direction: row;
 }
-#personal-projects .base .small-base-1 {
+#personal-projects #base #small-base-1 {
   margin: 5% auto 0 auto;
 }
-#personal-projects .base .small-base-1 .star-project {
+#personal-projects #base #small-base-1 .star-project {
   align-items: start;
   width: 40.25em;
   max-height: 35em;
   display: flex;
   flex-direction: column;
 }
-#personal-projects .base .small-base-1 .star-project .zoom {
+#personal-projects #base #small-base-1 .star-project .zoom {
   overflow: hidden;
   border-radius: 0.5em;
 }
-#personal-projects .base .small-base-1 .star-project .zoom .image-star-project {
+#personal-projects #base #small-base-1 .star-project .zoom .image-star-project {
   width: 100%;
   height: 100%;
   opacity: 70%;
   transition: all 0.5s;
 }
-#personal-projects .base .small-base-1 .star-project .zoom .image-star-project:hover {
+#personal-projects #base #small-base-1 .star-project .zoom .image-star-project:hover {
   transform: scale(1.1);
 }
-#personal-projects .base .small-base-1 .star-project .title-and-technology-project .title-star-project {
+#personal-projects #base #small-base-1 .star-project .title-and-technology-project .title-star-project {
   font-size: 1.5em;
   font-weight: 700;
   color: #FFFFFF;
 }
-#personal-projects .base .small-base-1 .star-project .title-and-technology-project .iconTechnologyProject {
+#personal-projects #base #small-base-1 .star-project .title-and-technology-project .iconTechnologyProject {
   width: 1.5em;
   padding: 0 0.1em;
 }
-#personal-projects .base .small-base-2 {
+#personal-projects #base #small-base-2 {
   margin: 3% auto;
 }
-#personal-projects .base .small-base-2 .secondarys-projects {
+#personal-projects #base #small-base-2 .secondarys-projects {
   width: 35.25em;
   height: 8em;
   background-color: #2D2D2D;
@@ -429,35 +429,35 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5%;
   transition: transform 0.5s;
 }
-#personal-projects .base .small-base-2 .secondarys-projects:hover {
+#personal-projects #base #small-base-2 .secondarys-projects:hover {
   transform: scale(1.02);
 }
-#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj {
+#personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj {
   display: flex;
   flex-direction: column;
 }
-#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
+#personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .title-project {
   font-size: 1.5em;
   font-weight: 600;
   color: #FFFFFF;
   margin: 0.5em 0 0 0.8em;
 }
-#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .text-project {
+#personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .text-project {
   color: white;
   margin: 0 auto 0 1.5em;
   padding: 0;
   font-size: 0.8em;
 }
-#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
+#personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
   display: flex;
   flex-direction: row;
   padding: 1em 1em;
 }
-#personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject .iconTechnologyProject {
+#personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .technologyProject .iconTechnologyProject {
   width: 1.5em;
   padding: 0.1em;
 }
-#personal-projects .base .small-base-2 .secondarys-projects .project-preview {
+#personal-projects #base #small-base-2 .secondarys-projects .project-preview {
   border-radius: 0 0.5em 0.5em 0;
   max-width: 50%;
 }
@@ -466,24 +466,24 @@ body::-webkit-scrollbar-thumb {
   #personal-projects {
     padding-bottom: 8em;
   }
-  #personal-projects .base {
+  #personal-projects #base {
     display: flex;
     flex-direction: column;
     padding: 0 auto 0 15%;
     margin: 0;
   }
-  #personal-projects .base .small-base-1 .star-project {
+  #personal-projects #base #small-base-1 .star-project {
     width: 75vw;
     height: 28em;
     align-items: center;
   }
-  #personal-projects .base .small-base-1 .star-project .title-and-technology-project {
+  #personal-projects #base #small-base-1 .star-project .title-and-technology-project {
     align-items: start;
   }
-  #personal-projects .base .small-base-2 {
+  #personal-projects #base #small-base-2 {
     margin: auto;
   }
-  #personal-projects .base .small-base-2 .secondarys-projects {
+  #personal-projects #base #small-base-2 .secondarys-projects {
     width: 75vw;
   }
 }
@@ -500,26 +500,26 @@ body::-webkit-scrollbar-thumb {
   #personal-projects .title-and-link-projects .link-see-all {
     display: none;
   }
-  #personal-projects .base .small-base-1 .star-project {
+  #personal-projects #base #small-base-1 .star-project {
     margin: 5% auto 0 auto;
     width: 90vw;
     max-height: 21.5em;
     align-items: start;
   }
-  #personal-projects .base .small-base-1 .star-project .title-star-project {
+  #personal-projects #base #small-base-1 .star-project .title-star-project {
     font-size: 1.2em;
   }
-  #personal-projects .base .small-base-2 .secondarys-projects {
+  #personal-projects #base #small-base-2 .secondarys-projects {
     width: 90vw;
     max-height: 6em;
   }
-  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .title-project {
+  #personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .title-project {
     font-size: 1.2em;
   }
-  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .text-project {
+  #personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .text-project {
     margin: 0 auto 0 1.2em;
   }
-  #personal-projects .base .small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
+  #personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .technologyProject {
     padding: 0.5em 0.8em;
   }
 }
@@ -699,7 +699,7 @@ footer .back-to-the-top {
   width: 60vw;
   padding-bottom: 5em;
 }
-#aboutme .title-and-description-about-me {
+#aboutme .title-and-description-2 {
   text-align: center;
   padding: 0 0 0 5em;
 }
@@ -712,7 +712,7 @@ footer .back-to-the-top {
   #aboutme .personal-photo {
     width: 35%;
   }
-  #aboutme .title-and-description-about-me {
+  #aboutme .title-and-description-2 {
     padding: 0;
   }
 }

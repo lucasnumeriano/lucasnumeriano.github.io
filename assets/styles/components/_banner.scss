@@ -10,7 +10,7 @@
     border-style: solid;
     animation: colorBorder infinite linear 8s;
 
-    .text-banner {
+    #text-banner {
         color: $font-color-1;
         display: flex;
         font-size: 1.15em;
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1280px){
     #banner {
-        .text-banner {
+        #text-banner {
             font-size: 1em;
             margin: 0 2rem 0 2em;
             text-align: center;

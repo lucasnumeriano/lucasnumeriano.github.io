@@ -1,18 +1,20 @@
 function addProject(linkName, name, iconTechnology, description, namePhoto,) {
     return `
-        <a href="https://github.com/Elasukou/${linkName}" target="blank">
-            <div class="secondarys-projects">
-                    <div class="name-and-description-proj">
-                        <h3 class="title-project">${name}.</h3>
-                        <p class="text-project">Veja mais no meu Github</p>
-                        <div class="technologyProject">
-                            ${iconTechnology}
+        <li>
+            <a href="https://github.com/Elasukou/${linkName}" target="blank">
+                <div class="secondarys-projects">
+                        <div class="name-and-description-proj">
+                            <h3 class="title-project">${name}.</h3>
+                            <p class="text-project">Veja mais no meu Github</p>
+                            <div class="technologyProject">
+                                ${iconTechnology}
+                            </div>
                         </div>
-                    </div>
-                    <img src="assets/images/${namePhoto}.svg" alt="${description}" class="project-preview">
-                
-            </div>
-        </a>
+                        <img src="assets/images/${namePhoto}.svg" alt="${description}" class="project-preview">
+            
+                </div>
+            </a>
+        </li>
     `
 }
 
@@ -22,7 +24,7 @@ function addTechnologies(technology) {
     `
 }
 
-document.querySelector(".small-base-2").innerHTML =
+document.querySelector("#small-base-2").innerHTML =
     addProject("alura-spa", "Alura SPA", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("sass"), "Landing Page de um SPA desenvolvido com SASS.", "alura-spa-preview") +
 
     addProject("fruta-e-fruto", "Fruta e Fruto", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("bootstrap"),"Landing page de uma página de receitas feito com bootstrap.", "fruta-e-fruto-preview") + 
