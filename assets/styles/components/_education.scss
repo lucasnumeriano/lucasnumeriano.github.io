@@ -32,8 +32,15 @@
         padding-top: 1em;
         padding-bottom: 1em;
         text-align: center;
+        .title {
+            width: 100%;
+            margin: auto;
+        }
         .faculty {
             text-align: start;
+            .faculty-description {
+                width: 75vw;
+            }
         }
     }    
 }

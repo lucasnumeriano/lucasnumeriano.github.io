@@ -473,7 +473,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
   #personal-projects #base #small-base-1 .star-project {
-    width: 75vw;
+    max-width: 65vw;
     height: 28em;
     align-items: center;
   }
@@ -484,7 +484,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
   }
   #personal-projects #base #small-base-2 .secondarys-projects {
-    width: 75vw;
+    max-width: 65vw;
   }
 }
 @media screen and (max-width: 645px) {
@@ -502,7 +502,7 @@ body::-webkit-scrollbar-thumb {
   }
   #personal-projects #base #small-base-1 .star-project {
     margin: 5% auto 0 auto;
-    width: 90vw;
+    max-width: 90vw;
     max-height: 21.5em;
     align-items: start;
   }
@@ -510,7 +510,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
   }
   #personal-projects #base #small-base-2 .secondarys-projects {
-    width: 90vw;
+    max-width: 90vw;
     max-height: 6em;
   }
   #personal-projects #base #small-base-2 .secondarys-projects .name-and-description-proj .title-project {
@@ -524,6 +524,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #certifications {
+  overflow-x: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -757,7 +758,14 @@ footer .back-to-the-top {
     padding-bottom: 1em;
     text-align: center;
   }
+  #education .title {
+    width: 100%;
+    margin: auto;
+  }
   #education .faculty {
     text-align: start;
+  }
+  #education .faculty .faculty-description {
+    width: 75vw;
   }
 }/*# sourceMappingURL=style.css.map */

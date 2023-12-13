@@ -1,20 +1,18 @@
 function addProject(linkName, name, iconTechnology, description, namePhoto,) {
     return `
-        <li>
-            <a href="https://github.com/Elasukou/${linkName}" target="blank">
-                <div class="secondarys-projects">
-                        <div class="name-and-description-proj">
-                            <h3 class="title-project">${name}.</h3>
-                            <p class="text-project">Veja mais no meu Github</p>
-                            <div class="technologyProject">
-                                ${iconTechnology}
-                            </div>
+        <a href="https://github.com/Elasukou/${linkName}" target="blank">
+            <div class="secondarys-projects">
+                    <div class="name-and-description-proj">
+                        <h3 class="title-project">${name}.</h3>
+                        <p class="text-project">Veja mais no meu Github</p>
+                        <div class="technologyProject">
+                            ${iconTechnology}
                         </div>
-                        <img src="assets/images/${namePhoto}.svg" alt="${description}" class="project-preview">
-            
-                </div>
-            </a>
-        </li>
+                    </div>
+                    <img src="assets/images/${namePhoto}.svg" alt="${description}" class="project-preview">
+        
+            </div>
+        </a>
     `
 }
 
