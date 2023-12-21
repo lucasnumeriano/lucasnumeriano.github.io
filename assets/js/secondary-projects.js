@@ -15,13 +15,11 @@ function addProject(linkName, name, iconTechnology, description, namePhoto,) {
         </a>
     `
 }
-
 function addTechnologies(technology) {
     return `
         <img src="assets/images/${technology}.svg" class="iconTechnologyProject">
     `
 }
-
 document.querySelector("#small-base-2").innerHTML =
     addProject("alura-spa", "Alura SPA", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("sass"), "Landing Page de um SPA desenvolvido com SASS.", "alura-spa-preview") +
 

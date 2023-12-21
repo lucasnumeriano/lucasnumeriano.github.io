@@ -524,7 +524,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #certifications {
-  overflow-x: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;

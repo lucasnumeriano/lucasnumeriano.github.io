@@ -13,12 +13,10 @@ function addStarProject(linkName, iconName, name, iconTechnology) {
         </a>
     `
 }
-
 function addTechnologies(technology) {
     return `
         <img src="assets/images/${technology}.svg" class="iconTechnologyProject">
     `
 }
-
 document.querySelector("#small-base-1").innerHTML = 
     addStarProject("pricing-table", "prewie-pricing-table", "Desafio da tabela de preços rocketseat.", addTechnologies("html5") + addTechnologies("css3") + addTechnologies("bootstrap"))
