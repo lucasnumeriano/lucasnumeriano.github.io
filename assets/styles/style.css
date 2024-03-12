@@ -14,6 +14,9 @@ html body a {
   text-decoration: none;
   cursor: url("../images/hand-pointing-duotone.svg"), pointer;
 }
+html body button {
+  cursor: url("../images/hand-pointing-duotone.svg"), pointer;
+}
 html body ul {
   list-style: none;
 }
@@ -310,7 +313,7 @@ body::-webkit-scrollbar-thumb {
     background: #0A1920;
   }
   #presentation .button-back-top {
-    margin: 0 0 0 80%;
+    margin: 70% 0 0 80%;
   }
   #presentation #about-description {
     width: 90%;
@@ -524,69 +527,54 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #certifications {
-  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#certifications .title {
+  margin: 0 auto 0 30%;
+  padding-bottom: 1em;
+}
+#certifications .carousel-container {
+  position: relative;
+  width: 90vw;
+  height: 45vh;
+  overflow: hidden;
+  margin-left: 3.5vw;
+}
+#certifications .carousel-container .carousel {
   display: flex;
-  flex-direction: column;
 }
-#certifications .course-area {
-  display: flex;
-  flex-direction: row;
+#certifications .carousel-container .carousel .carousel-item {
+  padding: 1em;
+  margin-top: -5%;
 }
-#certifications .course-area .card {
-  background-color: #2D2D2D;
-  border-radius: 0.5em;
-  margin: 0 1em 0 1em;
-  min-width: 27em;
-  max-width: 27em;
-  min-height: 10em;
-  max-height: 10em;
-  transition: transform 0.5s;
+#certifications .carousel-container .carousel .carousel-item .Certificate {
+  width: 25em;
+  height: 25em;
 }
-#certifications .course-area .card:hover {
-  transform: scale(1.02);
-}
-#certifications .course-area .card .course {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
+#certifications .prev-btn, #certifications .next-btn {
+  background-color: #255E78;
+  width: 1em;
+  height: 45vh;
   color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 0;
 }
-#certifications .course-area .card .course .image-course {
-  border-radius: 0.5em 0 0 0;
-  min-width: 5.75em;
-  max-width: 5.75em;
-  height: 100%;
+#certifications .next-btn {
+  margin: -43.5vh auto auto 95vw;
 }
-#certifications .course-area .card .course .specifications {
-  margin: 0;
-  text-align: start;
-}
-#certifications .course-area .card .course .specifications .title-course {
-  font-size: 1em;
-  font-weight: 600;
-  color: #FFFFFF;
-  padding: 0.5em;
-  margin: 0;
-}
-#certifications .course-area .card .course .specifications .school {
-  font-size: 1em;
-  font-weight: 100;
-  padding-left: 0.5em;
-  margin: 0;
-}
-#certifications .course-area .card .course .specifications .course-specifications {
-  font-size: 0.8em;
-  font-weight: 100;
-  margin: 0;
-}
-#certifications .course-area .card .course .specifications .date {
-  padding-left: 0.5em;
-}
-#certifications .course-area .card .course .specifications .code {
-  min-width: 150%;
-  margin: 1em -5.3em auto;
+#certifications .prev-btn {
+  margin: -43.5vh auto auto 4vw;
 }
 
+@media screen and (max-width: 645px) {
+  #certifications .title {
+    margin: auto;
+    text-align: center;
+  }
+}
 footer {
   background-color: #2D2D2D;
   display: flex;

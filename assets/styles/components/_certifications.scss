@@ -1,65 +1,52 @@
 #certifications {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    .course-area {
-        display: flex;
-        flex-direction: row;
-        .card {
-            background-color: $background-color-4;
-            border-radius: .5em;
-            margin: 0 1em 0 1em;
-            min-width: 27em;
-            max-width: 27em;
-            min-height: 10em;
-            max-height: 10em;
-            transition: transform .5s;
-            &:hover {
-                transform: scale(1.02);
-            }
-            .course {
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-                color: $font-color-1;
-                .image-course {
-                    border-radius: .5em 0 0 0;
-                    min-width: 5.75em;
-                    max-width: 5.75em;
-                    height: 100%;
-                }
-                .specifications {
-                    margin: 0;
-                    text-align: start;
-                    .title-course {
-                        font-size: 1em;
-                        font-weight: 600;
-                        color: $font-color-1;
-                        padding: .5em;
-                        margin: 0;
-                    }
-                    .school {
-                        font-size: 1em;
-                        font-weight: 100;
-                        padding-left: .5em;
-                        margin: 0;
-                    }
-                    .course-specifications {
-                        font-size: .8em;
-                        font-weight: 100;
-                        margin: 0;
-                    }
-
-                    .date {
-                        padding-left: .5em;
-                    }
-
-                    .code {
-                        min-width: 150%;
-                        margin: 1em -5.3em auto;
-                    }
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .title {
+        margin: 0 auto 0 30%;
+        padding-bottom: 1em;
+    }
+    .carousel-container {
+        position: relative;
+        width: 90vw;
+        height: 45vh;
+        margin-left: 3.5vw;
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            .carousel-item {
+                padding: 1em;
+                margin-top: -5%;
+                display: inline-block;
+                .Certificate {
+                    width: 25em;
+                    height: 25em;
                 }
             }
         }
     }
+    .prev-btn, .next-btn {
+        background-color: $background-color-8;
+        width: 1em;
+        height: 45vh;
+        color: $font-color-1;
+        font-weight: 500;
+        font-size: 1.5em;
+        position: absolute;
+        z-index: 0;
+    }
+    .next-btn {
+        margin: -43.5vh auto auto 95vw;
+    }
+    .prev-btn {
+        margin: -43.5vh auto auto 4vw;
+    }
+}
+
+@media screen and (max-width: 645px){
+    #certifications {
+        .title {
+            margin: auto;
+            text-align: center;
+        }
+    }    
 }

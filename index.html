@@ -10,7 +10,7 @@
     <script src="assets/js/secondary-projects.js" defer></script>
     <script src="assets/js/star-project.js" defer></script>
     <script src="assets/js/backtop.js" defer></script>
-    <script src="assets/js/certifications.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js" defer></script>
 </head>
 <body>
     <header>
@@ -116,18 +116,50 @@
         </section>
         <section id="certifications">
             <h2 class="title">Certificações</h2>
-            <div class="course-area">
-                <!--Course slide card. Localization in js/certifications.js-->
+            <div class="carousel-container">
+                <ul class="carousel" id="slider">
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/discover-conectar-certificate-black.svg" class="Certificate" alt="Certificado do Curso da rocketseat, trilha conectar discover.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Lucas-Numeriano-Javascript-40-Horas-Certificado-Curso-em-Video.svg" class="Certificate" alt="Certificado do Curso de JavaScript de 40 Horas do Curso em Vídeo.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Versionamento-de-código-com-git-e-github.svg" class="Certificate" alt="Certificado do curso de versionamento de código da DIO.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Versionamento-de-código-com-git-e-github.svg" class="Certificate" alt="Certificado do curso de versionamento de código da DIO.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Versionamento-de-código-com-git-e-github.svg" class="Certificate" alt="Certificado do curso de versionamento de código da DIO.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Versionamento-de-código-com-git-e-github.svg" class="Certificate" alt="Certificado do curso de versionamento de código da DIO.">
+                        </a>
+                    </li>
+                    <li class="carousel-item">
+                        <a href="#">
+                            <img src="assets/images/Versionamento-de-código-com-git-e-github.svg" class="Certificate" alt="Certificado do curso de versionamento de código da DIO.">
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <button class="prev-btn" id="scroll-left">‹</button>
+            <button class="next-btn" id="scroll-right">›</button>
+                           
         </section>
-        <section id="letswork">
-            <div class="description">
-                <p class="text-letswork">Precisa de um dev front-end?</p>
-                <a href="#" class="link-letswork">Vamos trabalhar juntos! &RightArrow;</a>
-            </div>
-            <img src="assets/images/dev-front-end.svg" alt="Homem programando em seu escritorio" class="front-end-dev">
-            <img src="assets/images/img-pre-footer.svg" alt="Homem programando em seu escritorio" class="front-end-dev-mob">
-        </section>
+        
     </main>
     <footer>
         <a href="#">
