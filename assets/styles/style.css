@@ -538,15 +538,16 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 90vw;
   height: 45vh;
-  overflow: hidden;
   margin-left: 3.5vw;
 }
 #certifications .carousel-container .carousel {
   display: flex;
+  overflow-x: auto;
 }
 #certifications .carousel-container .carousel .carousel-item {
   padding: 1em;
   margin-top: -5%;
+  display: inline-block;
 }
 #certifications .carousel-container .carousel .carousel-item .Certificate {
   width: 25em;
@@ -755,4 +756,39 @@ footer .back-to-the-top {
   #education .faculty .faculty-description {
     width: 75vw;
   }
+}
+#differential .title {
+  text-align: center;
+  padding-top: 1em;
+}
+#differential .card-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0 0 0;
+}
+#differential .card-list .card {
+  background: linear-gradient(130deg, #0A1920 35%, #193E4F 90%);
+  width: 250px;
+  height: 250px;
+  border-radius: 1em;
+}
+#differential .card-list .card .title-card {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-align: start;
+  margin-left: 1em;
+  max-width: 200px;
+}
+#differential .card-list .card .image-card {
+  width: 5em;
+  margin: 2em 0 0 9em;
+}
+#differential .card-list .card #code-image {
+  margin: 4em 0 0 9em;
+}
+#differential .card-list .card #person-image {
+  margin: 0 0 0 9em;
+}
+#differential .card-list .card #air-plane-img {
+  margin: 0 0 0 9em;
 }/*# sourceMappingURL=style.css.map */
