@@ -80,6 +80,12 @@
 
 @media screen and (max-width: 1280px) {
     #navbar{
+        .visible {
+            display: block;
+        }
+        .not-visible {
+            display: none;
+        }
         .nav-list{
             .component-nav-list {
                 display: none;
@@ -102,6 +108,7 @@
         position: fixed;
         z-index: 1;
         height: 100vh;
+        animation: appear .3s linear;
         width: 100vw;
         .nav-list {
             display: flex;
@@ -124,6 +131,7 @@
 
     .open {
         display: block;
+        overflow-y: hidden;
     }
 }
 
@@ -134,5 +142,15 @@
         .logo-link {
             max-width: 45%;
         }
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: .5;
+        transform: translateX(1000px);
+    }
+    100% {
+        opacity: 1;
     }
 }

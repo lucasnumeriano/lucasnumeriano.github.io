@@ -12,7 +12,7 @@
     <script src="assets/js/backtop.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js" defer></script>
 </head>
-<body>
+<body id="body">
     <header>
         <!--Desktop Menu-->
         <nav id="navbar">
@@ -21,7 +21,7 @@
                 <img src="assets/images/logo-principal.svg" alt="Logo com o nome Lucas Numeriano" class="logo main-logo">
             </a>
             <!--Navbar-->
-            <ul class="nav-list">
+            <ul class="nav-list" role="menu">
                 <li class="component-nav-list">
                     <a href="https://www.linkedin.com/in/lucasnumeriano/recent-activity/articles/" target="_blank" class="link-nav-list">Artigos</a>
                 </li>
@@ -30,7 +30,7 @@
                 </li>
                 <li class="component-nav-list dropdown">
                     <a href="#aboutme" class="link-nav-list">
-                        Sobre mim <img src="assets/images/caret-down.svg" class="img-dropdown">
+                        Sobre mim <img src="assets/images/caret-down.svg" alt="Indicação de dropdown" class="img-dropdown">
                     </a>
                     <div class="menu-dropdown">
                         <a href="#aboutme" class="link-dropdown">Quem sou</a>
@@ -48,14 +48,14 @@
             </ul>
             <!--Hamburguer Menu Icon-->
             <div class="mobile-menu-icon">
-                <button class="button-menu">
+                <button class="button-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                     <img src="assets/images/mobile-menu.svg" alt="menu hamburguer">
                 </button>
             </div>
         </nav>
         <!--Menu of mobile navigation-->
         <nav class="mobile-menu">
-            <ul class="nav-list">
+            <ul class="nav-list" role="menu">
                 <li class="component-nav-list"><a href="https://www.linkedin.com/in/lucasnumeriano/recent-activity/articles/" target="_blank" class="link-nav-list" onclick="removeClassOpen()">Artigos</a></li>
                 <li class="component-nav-list"><a href="#personal-projects" class="link-nav-list" onclick="removeClassOpen()">Projetos</a></li>
                 <li class="component-nav-list"><a href="#aboutme" class="link-nav-list" onclick="removeClassOpen()">Sobre mim</a></li>
@@ -69,16 +69,22 @@
             <p id="text-banner">Tenha um site de impacto e evolua o seu negócio para o próximo nível!</p>
         </section>
         <section id="presentation">
-            <h1 class="title">Eu sou <span>Lucas Numeriano</span></h1>
-            <p id="about-description">Desenvolvedor Front-end, orientado aos negócios com experiencia em criação de websites rapidos, responsivos, nos padrões do mecanismo de busca do google (SEO).</p>
-            <p id="presentation-link">
-                <a href="#aboutme" class="about-link">Leia sobre mim</a> ou <a href="#personal-projects" class="about-link">Veja meus projetos</a>
-            </p>
-            <!--Back to Top Button-->
-            <div class="button-back-top">
-                <a href="#" class="link-button-back-top">
-                    <img src="assets/images/arrow-fat-up.svg" alt="Voltar ao inicio" class="image-button-back-top">
-                </a>
+            <div class="cover">
+                <div id="card-presentation">
+                    <p id="card-content">Hello Word!</p>
+                </div>
+                <img src="assets/images/rocket-launch.svg" alt="Foguete" id="rocket">
+                <h1 class="title">Eu sou <span>Lucas Numeriano</span></h1>
+                <p id="about-description">Desenvolvedor Front-end, orientado aos negócios com experiencia em criação de websites rapidos, responsivos, nos padrões do mecanismo de busca do google (SEO).</p>
+                <p id="presentation-link">
+                    <a href="#aboutme" class="about-link">Leia sobre mim</a> ou <a href="#personal-projects" class="about-link">Veja meus projetos</a>
+                </p>
+                <!--Back to Top Button-->
+                <div class="button-back-top">
+                    <a href="#" class="link-button-back-top">
+                        <img src="assets/images/arrow-fat-up.svg" alt="Voltar ao inicio" class="image-button-back-top">
+                    </a>
+                </div>
             </div>
         </section>
         <section id="personal-projects">
@@ -164,24 +170,29 @@
             <ul class="card-list">
                 <li class="card">
                     <h3 class="title-card">Interfaces de Alta Fidelidade.</h3>
-                    <img src="assets/images/layout.svg" alt="Interface" class="image-card">
+                    <p class="description-skill">Implementação fiel de interfaces presando pela melhor experiência do usuário.</p>
+                    <img src="assets/images/layout.svg" alt="Interface" id="layout-image">
                 </li>
                 <li class="card">
                     <h3 class="title-card">Clean Code.</h3>
-                    <img src="assets/images/code.svg" alt="simbolo do código" class="image-card" id="code-image">
+                    <p class="description-skill">Código de qualidade seguindo sempre as melhores práticas do mercado.</p>
+                    <img src="assets/images/code.svg" alt="simbolo do código" id="code-image">
                 </li>
                 <li class="card">
                     <h3 class="title-card">Experiência em SEO.</h3>
-                    <img src="assets/images/engine.svg" alt="engine" class="image-card">
+                    <p class="description-skill">Melhores práticas de SEO para seu site ter as melhores posições nos mecanismos de busca.</p>
+                    <img src="assets/images/engine.svg" alt="engine" id="engine-image">
                 </li>
                 <li class="card">
-                    <h3 class="title-card">Experiência do Usuário e Acessibilidade.</h3>
-                    <img src="assets/images/person-arms-spread.svg" alt="person arms spread" class="image-card" id="person-image">
+                    <h3 class="title-card">UX e Acessibilidade.</h3>
+                    <p class="description-skill">Seus clientes com a melhor experiência de navegação possível.</p>
+                    <img src="assets/images/person-arms-spread.svg" alt="person arms spread" id="person-image">
                 </li>
-                <li class="card">
+                <!--<li class="card">
                     <h3 class="title-card">Experiência em animações e transições.</h3>
-                    <img src="assets/images/airplane-in-flight.svg" alt="airplane" class="image-card" id="air-plane-img">
-                </li>
+                    <p class="description-skill">Habilidades para criar animações suaves e transições atraentes.</p>
+                    <img src="assets/images/airplane-in-flight.svg" alt="airplane" id="air-plane-img">
+                </li>-->
             </ul>
         </section>
         <section id="letswork">

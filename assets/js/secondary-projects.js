@@ -17,7 +17,7 @@ function addProject(linkName, name, iconTechnology, description, namePhoto,) {
 }
 function addTechnologies(technology) {
     return `
-        <img src="assets/images/${technology}.svg" class="iconTechnologyProject">
+        <img src="assets/images/${technology}.svg" alt="${technology}" class="iconTechnologyProject">
     `
 }
 document.querySelector("#small-base-2").innerHTML =

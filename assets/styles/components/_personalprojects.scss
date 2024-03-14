@@ -76,6 +76,7 @@
                     .iconTechnologyProject {
                         width: 1.5em;
                         padding: 0 .1em;
+                        opacity: .6;
                     }
                 }
             }
@@ -119,6 +120,7 @@
                         .iconTechnologyProject {
                             width: 1.5em;
                             padding: .1em;
+                            opacity: .6;
                         }
                     }
                 }
@@ -126,6 +128,7 @@
                 .project-preview {
                     border-radius: 0 .5em .5em 0;
                     max-width: 50%;
+                    opacity: .6;
                 }
             }
         }
@@ -165,6 +168,7 @@
 @media screen and (max-width: 645px){
     #personal-projects {
         padding-bottom: 4em;
+        padding-top: 3em;
         .link-see-all-mobile {
             display: block;
         }
@@ -181,7 +185,7 @@
                 .star-project {
                     margin: 5% auto 0 auto;
                     max-width: 90vw;
-                    max-height: 21.5em;
+                    max-height: 23em;
                     align-items: start;
                     .title-star-project {
                         font-size: 1.2em;
@@ -191,7 +195,7 @@
             #small-base-2 {
                 .secondarys-projects {
                     max-width: 90vw;
-                    max-height: 6em;
+                    max-height: 7em;
                     .name-and-description-proj {
                         .title-project {
                             font-size: 1.2em;
@@ -202,6 +206,10 @@
                         .technologyProject {
                             padding: .5em .8em;
                         }
+                    }
+                    .project-preview {
+                        max-height: 85%;
+                        margin: auto 0 auto 0;
                     }
                 }
             }

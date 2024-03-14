@@ -3,8 +3,15 @@
     background-size: cover;
     min-height: 705px;
     overflow-x: hidden;
+    #card-presentation {
+        display: none;
+    }
 
     .if-mobile-on {
+        display: none;
+    }
+
+    #rocket {
         display: none;
     }
 
@@ -87,25 +94,86 @@
 
 @media screen and (max-width: 645px){
     #presentation {
-        background: $background-color-1;
-        .button-back-top {
-            margin: 70% 0 0 80%;
+        background: linear-gradient(130deg, $background-color-1 25%, $background-color-7 100%);
+        min-height: 75vh;
+        #rocket {
+            display: block;
+            width: 5em;
+            position: absolute;
+            margin: -17vh 0 0 25vw;
+            animation: rocket .1s infinite linear;
         }
-        #about-description {
-            width: 90%;
-            margin-top: 5%;
+        #card-presentation {
+            display: block;
+            position: absolute;
+            z-index: 0;
+            width: 9em;
+            height: 3em;
+            background-color: $background-color-3;
+            border-radius: .5em;
+            text-align: center;
+            align-items: center;
+            margin: -15% 0 0 60vw;
+            border: .1px solid $background-color-9;
+            #card-content {
+                background-image: linear-gradient(to right, $font-color-1, $font-color-3, $background-color-4);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: $font-color-1;
+                font-family: "Martian Mono", monospace;
+            }
         }
-
-        #presentation-link {
-            font-size: 1em;
-            font-weight: 700;
-            padding: 1rem;
-            .about-link {
+        .cover {
+            margin-top: 29vh;
+            .title {
+                text-align: start;
+                padding-left: .5em;
+                display: flex;
+                flex-direction: column;
+                animation: none;
+                font-size: 2em;
+            }
+            .button-back-top {
+                margin: 40% 0 0 80%;
+            }
+            #about-description {
+                width: 90%;
+                margin-top: 5%;
+                text-align: start;
+            }
+    
+            #presentation-link {
                 font-size: 1em;
                 font-weight: 700;
-                padding: 0 1rem 0 1rem;
-                text-align: center;
+                margin-left: -2em;
+                width: 100vw;
+                .about-link {
+                    font-size: 1em;
+                    font-weight: 700;
+                    padding: 0 1rem 0 1rem;
+                    text-align: start;
+                    text-decoration: underline;
+                }
             }
+        }  
+    }
+}
+
+@media screen and (max-width: 368px){
+    #presentation {
+        #card-presentation {
+            margin-left: 50vw;
+        }
+        .cover {
+            #presentation-link {
+                margin-left: -2em;
+                .about-link {
+                    text-align: center;
+                    margin: 0;
+                    padding: 0 .5em 0 .5em;
+                }
+            }    
         }
     }
 }
@@ -118,5 +186,14 @@
         transform: scale(1.05);
     } 100% {
         transform: scale(1);
+    }
+}
+
+@keyframes rocket {
+    0%, 100% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
     }
 }
