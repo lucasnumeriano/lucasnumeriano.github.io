@@ -17,6 +17,7 @@ buttonMn.addEventListener('click', () => {
 //function for close menu with click event
 function removeClassOpen() {
     mobileMn.classList.remove('open')
+    body.classList.remove('open')
 }
 //function to change the color of the menu in the scrolling event 
 window.addEventListener('scroll', () => {

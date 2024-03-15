@@ -1,44 +1,63 @@
 #certifications {
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 11em;
     .title {
         margin: 0 auto 0 30%;
         padding-bottom: 1em;
     }
-    .carousel-container {
-        position: relative;
-        width: 90vw;
-        height: 45vh;
-        margin-left: 3.5vw;
-        .carousel {
+    .link-see-all {
+        position: absolute;
+        z-index: 0;
+        width: 8em;
+        height: 2em;
+        background-color: $background-color-4;
+        font: bold 1.2em "Poppins";
+        color: $font-color-3;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding-top: .5em;
+        margin: 10vh 0 auto calc(50vw - 6em);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .container {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .certification {
+            background-color: $background-color-9;
+            padding: 0 1.5em 1em 0;
+            border-radius: .5em;
+            width: 30vw;
+            height: 8.75em;
             display: flex;
-            overflow-x: auto;
-            .carousel-item {
-                padding: 1em;
-                margin-top: -5%;
-                display: inline-block;
-                .Certificate {
-                    width: 25em;
-                    height: 25em;
+            flex-direction: row;
+            .institution-logo {
+                border-radius: .5em 0 0 0;
+                width: 5em;
+                height: 5em;
+            }
+            .title-and-description-course {
+                .course {
+                    width: 95%;
+                    margin: .5em 0 0 1em;
+                    font-size: 1em;
+                }
+                .institution {
+                    font-weight: 400;
+                    text-align: start;
+                    margin: 0 0 0 1em;
+                }
+                .credential {
+                    margin: 2em 0 0 1em;
+                    text-align: start;
+                    max-width: 95%;
                 }
             }
         }
-    }
-    .prev-btn, .next-btn {
-        background-color: $background-color-8;
-        width: 1em;
-        height: 45vh;
-        color: $font-color-1;
-        font-weight: 500;
-        font-size: 1.5em;
-        position: absolute;
-        z-index: 0;
-    }
-    .next-btn {
-        margin: -43.5vh auto auto 95vw;
-    }
-    .prev-btn {
-        margin: -43.5vh auto auto 4vw;
     }
 }
 
@@ -48,8 +67,5 @@
             margin: auto;
             text-align: center;
         } 
-        .next-btn {
-            margin: -43.5vh auto auto 90vw;
-        }
     }    
 }

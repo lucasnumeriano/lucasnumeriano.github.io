@@ -135,7 +135,12 @@
                 font-size: 2em;
             }
             .button-back-top {
-                margin: 40% 0 0 80%;
+                margin: 20% 0 0 70%;
+                width: 4.5em;
+                height: 4.5em;
+                .image-button-back-top {
+                    width: 80%;
+                }
             }
             #about-description {
                 width: 90%;

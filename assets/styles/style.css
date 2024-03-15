@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6em;
+  scroll-padding-top: 5em;
 }
 html body {
   margin: 0;
@@ -380,7 +380,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 2em;
   }
   #presentation .cover .button-back-top {
-    margin: 40% 0 0 80%;
+    margin: 20% 0 0 70%;
+    width: 4.5em;
+    height: 4.5em;
+  }
+  #presentation .cover .button-back-top .image-button-back-top {
+    width: 80%;
   }
   #presentation .cover #about-description {
     width: 90%;
@@ -434,7 +439,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #personal-projects {
-  background-color: #0D0D0D;
+  background: linear-gradient(180deg, #0A1920 0%, #0D0D0D 30%);
   display: flex;
   flex-direction: column;
 }
@@ -586,6 +591,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 645px) {
   #personal-projects {
+    background-color: #0D0D0D;
     padding-bottom: 4em;
     padding-top: 3em;
   }
@@ -627,55 +633,69 @@ body::-webkit-scrollbar-thumb {
 }
 #certifications {
   padding-top: 5em;
-  padding-bottom: 5em;
+  padding-bottom: 11em;
 }
 #certifications .title {
   margin: 0 auto 0 30%;
   padding-bottom: 1em;
 }
-#certifications .carousel-container {
-  position: relative;
-  width: 90vw;
-  height: 45vh;
-  margin-left: 3.5vw;
-}
-#certifications .carousel-container .carousel {
-  display: flex;
-  overflow-x: auto;
-}
-#certifications .carousel-container .carousel .carousel-item {
-  padding: 1em;
-  margin-top: -5%;
-  display: inline-block;
-}
-#certifications .carousel-container .carousel .carousel-item .Certificate {
-  width: 25em;
-  height: 25em;
-}
-#certifications .prev-btn, #certifications .next-btn {
-  background-color: #255E78;
-  width: 1em;
-  height: 45vh;
-  color: #FFFFFF;
-  font-weight: 500;
-  font-size: 1.5em;
+#certifications .link-see-all {
   position: absolute;
   z-index: 0;
+  width: 8em;
+  height: 2em;
+  background-color: #2D2D2D;
+  font: bold 1.2em "Poppins";
+  color: #777777;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  margin: 10vh 0 auto calc(50vw - 6em);
 }
-#certifications .next-btn {
-  margin: -43.5vh auto auto 95vw;
+#certifications .link-see-all:hover {
+  text-decoration: underline;
 }
-#certifications .prev-btn {
-  margin: -43.5vh auto auto 4vw;
+#certifications .container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#certifications .container .certification {
+  background-color: #ECECEC;
+  padding: 0 1.5em 1em 0;
+  border-radius: 0.5em;
+  width: 30vw;
+  height: 8.75em;
+  display: flex;
+  flex-direction: row;
+}
+#certifications .container .certification .institution-logo {
+  border-radius: 0.5em 0 0 0;
+  width: 5em;
+  height: 5em;
+}
+#certifications .container .certification .title-and-description-course .course {
+  width: 95%;
+  margin: 0.5em 0 0 1em;
+  font-size: 1em;
+}
+#certifications .container .certification .title-and-description-course .institution {
+  font-weight: 400;
+  text-align: start;
+  margin: 0 0 0 1em;
+}
+#certifications .container .certification .title-and-description-course .credential {
+  margin: 2em 0 0 1em;
+  text-align: start;
+  max-width: 95%;
 }
 
 @media screen and (max-width: 645px) {
   #certifications .title {
     margin: auto;
     text-align: center;
-  }
-  #certifications .next-btn {
-    margin: -43.5vh auto auto 90vw;
   }
 }
 footer {
@@ -723,7 +743,6 @@ footer .back-to-the-top {
 #letswork {
   display: flex;
   justify-content: end;
-  padding-top: 5em;
 }
 #letswork .description {
   display: flex;
@@ -858,6 +877,10 @@ footer .back-to-the-top {
   #education .faculty .faculty-description {
     width: 75vw;
   }
+}
+#differential {
+  background-color: #ECECEC;
+  padding-bottom: 5em;
 }
 #differential .title {
   text-align: center;
