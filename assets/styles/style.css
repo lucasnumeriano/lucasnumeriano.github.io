@@ -397,6 +397,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
     margin-left: -2em;
     width: 100vw;
+    padding-right: 0;
   }
   #presentation .cover #presentation-link .about-link {
     font-size: 1em;
@@ -640,18 +641,17 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 1em;
 }
 #certifications .link-see-all {
-  position: absolute;
-  z-index: 0;
+  display: block;
   width: 8em;
   height: 2em;
   background-color: #2D2D2D;
-  font: bold 1.2em "Poppins";
+  font: bold 1em "Poppins";
   color: #777777;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
   padding-top: 0.5em;
-  margin: 10vh 0 auto calc(50vw - 6em);
+  margin: 8vh auto;
 }
 #certifications .link-see-all:hover {
   text-decoration: underline;
@@ -667,9 +667,13 @@ body::-webkit-scrollbar-thumb {
   padding: 0 1.5em 1em 0;
   border-radius: 0.5em;
   width: 30vw;
-  height: 8.75em;
+  min-height: 8.75em;
   display: flex;
   flex-direction: row;
+  transition: transform 0.5s;
+}
+#certifications .container .certification:hover {
+  transform: scale(1.02);
 }
 #certifications .container .certification .institution-logo {
   border-radius: 0.5em 0 0 0;
@@ -677,14 +681,15 @@ body::-webkit-scrollbar-thumb {
   height: 5em;
 }
 #certifications .container .certification .title-and-description-course .course {
-  width: 95%;
+  max-width: 95%;
+  height: 3em;
   margin: 0.5em 0 0 1em;
   font-size: 1em;
 }
 #certifications .container .certification .title-and-description-course .institution {
   font-weight: 400;
   text-align: start;
-  margin: 0 0 0 1em;
+  margin-left: 1em;
 }
 #certifications .container .certification .title-and-description-course .credential {
   margin: 2em 0 0 1em;
@@ -692,10 +697,25 @@ body::-webkit-scrollbar-thumb {
   max-width: 95%;
 }
 
+@media screen and (max-width: 1280px) {
+  #certifications {
+    padding-bottom: 0;
+  }
+  #certifications .container {
+    flex-direction: column;
+  }
+  #certifications .container .certification {
+    margin: 0 auto 1em auto;
+    min-width: 32em;
+  }
+}
 @media screen and (max-width: 645px) {
   #certifications .title {
     margin: auto;
     text-align: center;
+  }
+  #certifications .container .certification {
+    min-width: 85vw;
   }
 }
 footer {
@@ -820,7 +840,7 @@ footer .back-to-the-top {
     align-items: center;
   }
   #aboutme .personal-photo {
-    width: 35%;
+    width: 30%;
   }
   #aboutme .title-and-description-2 {
     padding: 0;

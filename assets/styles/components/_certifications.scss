@@ -6,18 +6,17 @@
         padding-bottom: 1em;
     }
     .link-see-all {
-        position: absolute;
-        z-index: 0;
+        display: block;
         width: 8em;
         height: 2em;
         background-color: $background-color-4;
-        font: bold 1.2em "Poppins";
+        font: bold 1em "Poppins";
         color: $font-color-3;
         text-align: center;
         text-transform: uppercase;
         border-radius: 5px;
         padding-top: .5em;
-        margin: 10vh 0 auto calc(50vw - 6em);
+        margin: 8vh auto;
         &:hover {
             text-decoration: underline;
         }
@@ -32,9 +31,13 @@
             padding: 0 1.5em 1em 0;
             border-radius: .5em;
             width: 30vw;
-            height: 8.75em;
+            min-height: 8.75em;
             display: flex;
             flex-direction: row;
+            transition: transform .5s;
+            &:hover {
+                transform: scale(1.02);
+            }
             .institution-logo {
                 border-radius: .5em 0 0 0;
                 width: 5em;
@@ -42,14 +45,15 @@
             }
             .title-and-description-course {
                 .course {
-                    width: 95%;
+                    max-width: 95%;
+                    height: 3em;
                     margin: .5em 0 0 1em;
                     font-size: 1em;
                 }
                 .institution {
                     font-weight: 400;
                     text-align: start;
-                    margin: 0 0 0 1em;
+                    margin-left: 1em;
                 }
                 .credential {
                     margin: 2em 0 0 1em;
@@ -61,11 +65,29 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    #certifications {
+        padding-bottom: 0;
+        .container {
+            flex-direction: column;
+            .certification {
+                margin: 0 auto 1em auto;
+                min-width: 32em;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 645px){
     #certifications {
         .title {
             margin: auto;
             text-align: center;
         } 
+        .container {
+            .certification {
+                min-width: 85vw;
+            }
+        }
     }    
 }
