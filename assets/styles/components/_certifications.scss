@@ -1,22 +1,27 @@
 #certifications {
     padding-top: 5em;
-    padding-bottom: 11em;
+    padding-bottom: 3em;
     .title {
         margin: 0 auto 0 30%;
         padding-bottom: 1em;
     }
-    .link-see-all {
-        display: block;
+    .button-see-all {
+        display: flex;
+        justify-content: center;
         width: 8em;
-        height: 2em;
+        height: 2.5em;
         background-color: $background-color-4;
-        font: bold 1em "Poppins";
+        font: bold 1.2em "Poppins";
         color: $font-color-3;
         text-align: center;
         text-transform: uppercase;
         border-radius: 5px;
+        border: none;
         padding-top: .5em;
-        margin: 8vh auto;
+        margin: 5em auto;
+        .see-less {
+            display: none;
+        }
         &:hover {
             text-decoration: underline;
         }
@@ -46,14 +51,14 @@
             .title-and-description-course {
                 .course {
                     max-width: 95%;
-                    height: 3em;
+                    min-height: 3em;
                     margin: .5em 0 0 1em;
                     font-size: 1em;
                 }
                 .institution {
                     font-weight: 400;
                     text-align: start;
-                    margin-left: 1em;
+                    margin: 0 0 0 1em;
                 }
                 .credential {
                     margin: 2em 0 0 1em;
@@ -62,6 +67,12 @@
                 }
             }
         }
+    }
+    .invisible {
+        display: none;
+    }
+    .visible {
+        display: flex !important;
     }
 }
 
@@ -87,7 +98,14 @@
         .container {
             .certification {
                 min-width: 85vw;
+                .institution-logo {
+                    width: 4em;
+                    height: 4em;
+                }
             }
+        }
+        .mobile-none {
+            display: none;
         }
     }    
 }

@@ -15,6 +15,15 @@
         display: none;
     }
 
+    .stars {
+        background-color: $background-color-5;
+        width: 1px;
+        height: 5em;
+        position: absolute;
+        z-index: 0;
+        display: none;
+    }
+
     .title {
         color: $font-color-1;
         font-size: 3.5em;
@@ -134,6 +143,39 @@
                 animation: none;
                 font-size: 2em;
             }
+            .stars {
+                display: block;
+                transform: rotate(45deg);
+                margin-top: -15em;
+            }
+            .star-1 {
+                margin-left: 9em;
+                animation: star-1 .3s infinite linear;
+            }
+            .star-2 {
+                margin-left: 11em;
+                height: 3em;
+                animation: star-2 .4s infinite linear;
+            }
+            .star-3 {
+                margin-left: 12em;
+                height: 2em;
+                animation: star-3 .2s infinite linear;
+            }
+            .star-4 {
+                margin-left: 13em;
+                height: 4em;
+                animation: star-4 .4s infinite linear;
+            }
+            .star-5 {
+                margin-left: 15em;
+                animation: star-5 .2s infinite linear;
+            }
+            .star-6 {
+                margin-left: 17em;
+                height: 4em;
+                animation: star-6 .3s infinite linear;
+            }
             .button-back-top {
                 margin: 20% 0 0 70%;
                 width: 4.5em;
@@ -202,4 +244,64 @@
     50% {
         transform: translateX(2px);
     }
+}
+
+@keyframes star-1 {
+    0% {
+        margin: -15em 0 0 11em;
+    } 100% {
+        margin: -5em 0 0 0;
+    } /*100% {
+        margin: -15em 0 0 11em;
+    }*/
+}
+
+@keyframes star-2 {
+    0% {
+        margin: -15em 0 0 13em;
+    } 100% {
+        margin: 0 0 0 -2em;
+    } /*100% {
+        margin: -15em 0 0 13em;
+    }*/
+}
+
+@keyframes star-3 {
+    0% {
+        margin: -15em 0 0 15em;
+    } 100% {
+        margin: 1em 0 0 -2em;
+    } /*100% {
+        margin: -15em 0 0 15em;
+    }*/
+}
+
+@keyframes star-4 {
+    0% {
+        margin: -15em 0 0 17em;
+    } 100% {
+        margin: 2em 0 0 -2em;
+    } /*100% {
+        margin: -15em 0 0 17em;
+    }*/
+}
+
+@keyframes star-5 {
+    0% {
+        margin: -15em 0 0 19em;
+    } 100% {
+        margin: 3em 0 0 0;
+    } /*100% {
+        margin: -15em 0 0 19em;
+    }*/
+}
+
+@keyframes star-6 {
+    0% {
+        margin: -15em 0 0 21em;
+    } 100% {
+        margin: 5em 0 0 0;
+    } /*100% {
+        margin: -15em 0 0 21em;
+    }*/
 }

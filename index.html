@@ -6,10 +6,8 @@
     <title>Portfolio | Lucas Numeriano</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <script src="assets/js/menu.js" defer></script>
-    <script src="assets/js/secondary-projects.js" defer></script>
-    <script src="assets/js/star-project.js" defer></script>
-    <script src="assets/js/backtop.js" defer></script>
+    <link rel="preload" as="image" href="assets/images/background.svg">
+    <script src="dist/bundle.js" defer></script>
 </head>
 <body id="body">
     <header>
@@ -39,7 +37,7 @@
                     </div>
                 </li>
                 <li class="component-nav-list">
-                    <a href="#" class="link-nav-list">Contato</a>
+                    <a href="mailto:lucasnumeriano.dev@gmail.com" class="link-nav-list">Contato</a>
                 </li>
                 <li class="component-nav-list">
                     <a href="#" class="link-nav-list">FAQ's</a>
@@ -47,7 +45,7 @@
             </ul>
             <!--Hamburguer Menu Icon-->
             <div class="mobile-menu-icon">
-                <button class="button-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <button class="button-menu" aria-label="Abrir Menu e Fechar Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                     <img src="assets/images/mobile-menu.svg" alt="menu hamburguer">
                 </button>
             </div>
@@ -58,7 +56,7 @@
                 <li class="component-nav-list"><a href="https://www.linkedin.com/in/lucasnumeriano/recent-activity/articles/" target="_blank" class="link-nav-list" onclick="removeClassOpen()">Artigos</a></li>
                 <li class="component-nav-list"><a href="#personal-projects" class="link-nav-list" onclick="removeClassOpen()">Projetos</a></li>
                 <li class="component-nav-list"><a href="#aboutme" class="link-nav-list" onclick="removeClassOpen()">Sobre mim</a></li>
-                <li class="component-nav-list"><a href="#" class="link-nav-list" onclick="removeClassOpen()">Contato</a></li>
+                <li class="component-nav-list"><a href="mailto:lucasnumeriano.dev@gmail.com" class="link-nav-list" onclick="removeClassOpen()">Contato</a></li>
                 <li class="component-nav-list"><a href="#" class="link-nav-list" onclick="removeClassOpen()">FAQ's</a></li>
             </ul>
         </nav>
@@ -70,9 +68,15 @@
         <section id="presentation">
             <div class="cover">
                 <div id="card-presentation">
-                    <p id="card-content">Hello Word!</p>
+                    <p id="card-content">Hello World!</p>
                 </div>
                 <img src="assets/images/rocket-launch.svg" alt="Foguete" id="rocket">
+                <div class="stars star-1"></div>
+                <div class="stars star-2"></div>
+                <div class="stars star-3"></div>
+                <div class="stars star-4"></div>
+                <div class="stars star-5"></div>
+                <div class="stars star-6"></div>
                 <h1 class="title">Eu sou <span>Lucas Numeriano</span></h1>
                 <p id="about-description">Desenvolvedor Front-end, orientado aos negócios com experiencia em criação de websites rápidos, responsivos, nos padrões do mecanismo de busca do google (SEO).</p>
                 <p id="presentation-link">
@@ -126,7 +130,7 @@
                     <img src="assets/images/diologo.svg" alt="Logo da DIO" class="institution-logo">
                     <div class="title-and-description-course">
                         <a href="https://www.dio.me/certificate/1916D797" target="_blank">
-                            <h3 class="course">Versionamento de Código com Git e Github [2 HORAS]</h3>
+                            <h3 class="course">Versionamento de Código com Git e Github [2 HORAS].</h3>
                             <h4 class="institution">DIO</h4>
                             <p class="credential">Código credencial: 1916D797</p>
                         </a>
@@ -136,25 +140,113 @@
                     <img src="assets/images/aluralogo.svg" alt="Logo da Alura" class="institution-logo">
                     <div class="title-and-description-course">
                         <a href="https://cursos.alura.com.br/certificate/fd99eb32-47ee-4693-86a8-0b4caa2e8fb7" target="_blank">
-                            <h3 class="course">JavaScript para Web: Crie páginas dinâmicas [10 HORAS]</h3>
+                            <h3 class="course">JS e HTML: desenvolva um jogo e pratique lógica de programação [16 HORAS].</h3>
                             <h4 class="institution">Alura</h4>
                             <p class="credential">fd99eb32-47ee-4693-86a8-0b4caa2e8fb7</p>
                         </a>
                     </div>
                 </li>
+                <li class="certification">
+                    <img src="assets/images/aluralogo.svg" alt="Logo da Alura" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/afdeac5c-095b-46e9-a747-46ba5a593ef4" target="_blank">
+                            <h3 class="course">JavaScript para Web: Crie páginas dinâmicas [10 HORAS]</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">afdeac5c-095b-46e9-a747-46ba5a593ef4</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="container mobile-none">
+                <li class="certification">
+                    <img src="assets/images/aluralogo.svg" alt="Logo da Alura" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/4a8b584d-26a1-4af9-a2df-52e11905418a" target="_blank">
+                            <h3 class="course">SASS: CSS Sintaticamente Espetacular [8 HORAS].</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">4a8b584d-26a1-4af9-a2df-52e11905418a</p>
+                        </a>
+                    </div>
                 </li>
                 <li class="certification">
-                    <img src="assets/images/cursoemvideologo.svg" alt="Alura Logo" class="institution-logo">
+                    <img src="assets/images/aluralogo.svg" alt="Alura Logo" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/2622fb07-db71-436c-8a78-c0f98563315f">
+                            <h3 class="course">SEO: Otimização de Sites [8 HORAS].</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">2622fb07-db71-436c-8a78-c0f98563315f</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="certification">
+                    <img src="assets/images/aluralogo.svg" alt="Alura Logo" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/b6a8ab94-17f1-4cc3-95ef-8ff415a1de88">
+                            <h3 class="course">Bootstrap 4: Criando uma landing page responsiva [8 HORAS].</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">b6a8ab94-17f1-4cc3-95ef-8ff415a1de88</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="container mobile-none invisible pop-up">
+                <li class="certification">
+                    <img src="assets/images/aluralogo.svg" alt="Alura Logo" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/e7084629-cf50-4596-b4c2-ae130438cbc4">
+                            <h3 class="course">Praticando CSS: Grid e Flexbox [6 HORAS].</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">e7084629-cf50-4596-b4c2-ae130438cbc4</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="certification">
+                    <img src="assets/images/aluralogo.svg" alt="Logo da Alura" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://cursos.alura.com.br/certificate/1341c9d8-ea05-470a-9b53-022eacaf3132" target="_blank">
+                            <h3 class="course">HTML e CSS: Responsividade com mobile-first [12 HORAS].</h3>
+                            <h4 class="institution">Alura</h4>
+                            <p class="credential">1341c9d8-ea05-470a-9b53-022eacaf3132</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="certification">
+                    <img src="assets/images/cursoemvideologo.svg" alt="Logo do Curso em vídeo" class="institution-logo">
                     <div class="title-and-description-course">
                         <a href="https://www.cursoemvideo.com/validacao-de-certificado/?codigo=292C7-6C61-9">
-                            <h3 class="course">JavaScript [40 HORAS]</h3>
+                            <h3 class="course">JavaScript [40 HORAS].</h3>
                             <h4 class="institution">Curso em Vídeo</h4>
                             <p class="credential">Código credencial: 292C7-6C61-9</p>
                         </a>
                     </div>
                 </li>
             </ul>
-            <a href="https://www.linkedin.com/in/lucasnumeriano/details/certifications/" target="_blank" class="link-see-all">veja todos</a>         
+            <ul class="container mobile-none invisible pop-up">
+                <li class="certification">
+                    <img src="assets/images/rocketseatlogo.svg" alt="Logo da Rocketseat" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://app.rocketseat.com.br/certificates/28605909-58b4-4157-a681-d1f844e0c2ec" target="_blank">
+                            <h3 class="course">Trilha Conectar Discover [3 HORAS].</h3>
+                            <h4 class="institution">Rocketseat</h4>
+                            <p class="credential">28605909-58b4-4157-a681-d1f844e0c2ec</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="certification">
+                    <img src="assets/images/fundacaobradescologo.svg" alt="Logo da Fundação Bradesco" class="institution-logo">
+                    <div class="title-and-description-course">
+                        <a href="https://www.ev.org.br/validar-certificado#">
+                            <h3 class="course">Fundamentos do Desing Gráfico [6 HORAS].</h3>
+                            <h4 class="institution">Fundação Bradesco</h4>
+                            <p class="credential">A769E832-2316-4132-9D36-136FCF4C369B</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <button class="button-see-all">
+                <span class="see-all">ver todos</span>
+                <span class="see-less">ver menos</span>
+            </button>        
         </section>
         <section id="differential">
             <h2 class="title">Diferenciais</h2>
