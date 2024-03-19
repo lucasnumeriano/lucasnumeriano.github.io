@@ -53,7 +53,7 @@ body::-webkit-scrollbar-track {
   background: #0D0D0D;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #777777;
+  background-color: #696969;
 }
 
 #navbar {
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
 }
 #navbar .nav-list .component-nav-list .link-nav-list:hover {
-  color: #777777;
+  color: #696969;
   text-decoration: underline;
 }
 #navbar .nav-list .component-nav-list .link-nav-list .img-dropdown {
@@ -311,7 +311,7 @@ body::-webkit-scrollbar-thumb {
 }
 #presentation #presentation-link .about-link:hover {
   text-decoration: underline;
-  color: #777777;
+  color: #696969;
 }
 #presentation .button-back-top {
   background-color: rgba(37, 37, 37, 0.4470588235) !important;
@@ -369,7 +369,7 @@ body::-webkit-scrollbar-thumb {
     border: 0.1px solid #ECECEC;
   }
   #presentation #card-presentation #card-content {
-    background-image: linear-gradient(to right, #FFFFFF, #777777, #2D2D2D);
+    background-image: linear-gradient(to right, #FFFFFF, #696969, #2D2D2D);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -551,7 +551,7 @@ body::-webkit-scrollbar-thumb {
   height: 2em;
   background-color: #2D2D2D;
   font: bold 1em "Poppins";
-  color: #777777;
+  color: #696969;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -570,7 +570,7 @@ body::-webkit-scrollbar-thumb {
   height: 2em;
   background-color: #2D2D2D;
   font: bold 1.2em "Poppins";
-  color: #777777;
+  color: #a0a0a0;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -748,7 +748,7 @@ body::-webkit-scrollbar-thumb {
   height: 2.5em;
   background-color: #2D2D2D;
   font: bold 1.2em "Poppins";
-  color: #777777;
+  color: #a0a0a0;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -865,11 +865,11 @@ footer .line {
   width: 85vw;
 }
 footer .text-footer {
-  color: #777777;
+  color: #959595;
 }
 footer .back-to-the-top {
   padding: 1em 0 1em 0;
-  color: #777777;
+  color: #959595;
   text-transform: uppercase;
 }
 
@@ -888,7 +888,7 @@ footer .back-to-the-top {
   flex-direction: column;
 }
 #letswork .description .text-letswork {
-  color: #777777;
+  color: #696969;
   margin: 10em 0 0 8em;
   text-transform: uppercase;
   font-weight: 500;
@@ -948,6 +948,9 @@ footer .back-to-the-top {
   width: 60vw;
   padding-bottom: 5em;
 }
+#aboutme .personal-photo {
+  width: 100%;
+}
 #aboutme .title-and-description-2 {
   text-align: center;
   padding: 0 0 0 5em;
@@ -997,7 +1000,7 @@ footer .back-to-the-top {
   margin: 0;
 }
 #education .faculty .title-and-description-faculty .faculty-description .faculty-data {
-  color: #777777;
+  color: #4f4e4e;
 }
 
 @media screen and (max-width: 645px) {
