@@ -833,9 +833,6 @@ body::-webkit-scrollbar-thumb {
     width: 4em;
     height: 4em;
   }
-  #certifications .mobile-none {
-    display: none;
-  }
 }
 footer {
   background-color: #2D2D2D;

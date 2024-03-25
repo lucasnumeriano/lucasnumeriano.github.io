@@ -7,7 +7,7 @@ const seeLess = document.querySelector('.see-less')
 
 buttonSeeAll.addEventListener('click', () => {
     listContainers.forEach(container => {
-        if (container.classList.contains('visible') && container.classList.contains('pop-up')) {
+        if (container.classList.contains('visible') && container.classList.contains('cont')) {
             container.classList.add('invisible')
             container.classList.remove('visible');
             seeAll.classList.remove('invisible');

@@ -19,6 +19,12 @@ function removeClassOpen() {
     mobileMn.classList.remove('open')
     body.classList.remove('open')
 }
+
+document.querySelectorAll('.nav-list .link-nav-list').forEach(link => {
+    link.addEventListener('click', () => {
+        removeClassOpen();
+    });
+});
 //function to change the color of the menu in the scrolling event 
 window.addEventListener('scroll', () => {
     if (scrollY > 10) {
