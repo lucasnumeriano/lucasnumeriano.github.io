@@ -3,13 +3,33 @@
     flex-direction: row;
     margin: 5em auto 0 auto;
     width: 60vw;
-    padding-bottom: 7em;
+    padding-bottom: 6em;
     .personal-photo {
         width: 100%;
     }
     .title-and-description-2 {
         text-align: center;
         padding: 0 0 0 5em;
+    }
+    .container-rsm-download {
+        width: 12em;
+        height: 3em;
+        background-color: $background-color-8;
+        margin: 3em auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .resume-download {
+            color: $font-color-1;
+            font-weight: 600;
+            font-size: 1.2em;
+            .text-rsm-download {
+                margin: 0;
+            }
+        }
+        &:hover {
+            text-decoration: underline 1.5px solid white;
+        }
     }
 }
 

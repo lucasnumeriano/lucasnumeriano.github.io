@@ -948,7 +948,7 @@ footer .back-to-the-top:hover {
   flex-direction: row;
   margin: 5em auto 0 auto;
   width: 60vw;
-  padding-bottom: 7em;
+  padding-bottom: 6em;
 }
 #aboutme .personal-photo {
   width: 100%;
@@ -956,6 +956,27 @@ footer .back-to-the-top:hover {
 #aboutme .title-and-description-2 {
   text-align: center;
   padding: 0 0 0 5em;
+}
+#aboutme .container-rsm-download {
+  width: 12em;
+  height: 3em;
+  background-color: #255E78;
+  margin: 3em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutme .container-rsm-download .resume-download {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+#aboutme .container-rsm-download .resume-download .text-rsm-download {
+  margin: 0;
+}
+#aboutme .container-rsm-download:hover {
+  -webkit-text-decoration: underline 1.5px solid white;
+          text-decoration: underline 1.5px solid white;
 }
 
 @media screen and (max-width: 1280px) {
