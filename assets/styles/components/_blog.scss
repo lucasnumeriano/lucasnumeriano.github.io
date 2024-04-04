@@ -1,0 +1,45 @@
+#main-blog {
+    background-color: $background-color-9;
+    .old-aritcle {
+        width: 35em;
+        .img-old-article {
+            width: 35em;
+        }
+        .title-old-article {
+            font-size: 1.7em;
+            margin-bottom: 0;
+        }
+        .date-old-article {
+            margin-top: 0;
+        }
+        .description-old-article {
+            width: 100%;
+        }
+    }
+}
+
+#star-blog {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 6.3em auto;
+    #link-for-prince-article {
+        margin-top: 5em;
+        #prince-article-img {
+            width: 80vw;
+            height: auto;
+        }
+        #article-title {
+            font-size: 2.5em;
+            margin-bottom: 0;
+            color: $font-color-8;
+        }
+        #article-date {
+            margin-top: 0;
+        }
+        #article-description {
+            min-width: 100%;
+            color: $font-color-3;
+        }
+    }
+}

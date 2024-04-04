@@ -33,6 +33,10 @@ footer {
         padding: 1em 0 1em 0;
         color: $font-color-5;
         text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+            opacity: 70%;
+        }
     }
 }
 

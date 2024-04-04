@@ -541,7 +541,7 @@ body::-webkit-scrollbar-thumb {
 }*/
 }
 #personal-projects {
-  background: linear-gradient(180deg, #0A1920 0%, #0D0D0D 30%);
+  background: linear-gradient(180deg, #0A1920 0%, #0D0D0D 40%);
   display: flex;
   flex-direction: column;
 }
@@ -623,7 +623,7 @@ body::-webkit-scrollbar-thumb {
 #personal-projects #base #small-base-2 .secondarys-projects {
   width: 35.25em;
   height: 8em;
-  background-color: #2D2D2D;
+  background-color: rgba(45, 45, 45, 0.4588235294);
   border-radius: 0.5em;
   display: flex;
   justify-content: space-between;
@@ -780,6 +780,7 @@ body::-webkit-scrollbar-thumb {
 }
 #certifications .container .certification:hover {
   transform: scale(1.02);
+  text-decoration: underline;
 }
 #certifications .container .certification .institution-logo {
   border-radius: 0.5em 0 0 0;
@@ -862,12 +863,16 @@ footer .line {
   width: 85vw;
 }
 footer .text-footer {
-  color: #959595;
+  color: #e7e7e7;
 }
 footer .back-to-the-top {
   padding: 1em 0 1em 0;
-  color: #959595;
+  color: #e7e7e7;
   text-transform: uppercase;
+}
+footer .back-to-the-top:hover {
+  text-decoration: underline;
+  opacity: 70%;
 }
 
 @media screen and (max-width: 645px) {
@@ -943,7 +948,7 @@ footer .back-to-the-top {
   flex-direction: row;
   margin: 5em auto 0 auto;
   width: 60vw;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 }
 #aboutme .personal-photo {
   width: 100%;
@@ -1045,7 +1050,7 @@ footer .back-to-the-top {
   width: 200px;
 }
 #differential .card-list .card .description-skill {
-  color: #959595;
+  color: #e7e7e7;
   max-width: 80%;
   margin: -1em 0 0 1.5em;
 }
@@ -1133,4 +1138,49 @@ footer .back-to-the-top {
     width: 4em;
     margin: 0 0 0 70vw;
   }
+}
+#main-blog {
+  background-color: #ECECEC;
+}
+#main-blog .old-aritcle {
+  width: 35em;
+}
+#main-blog .old-aritcle .img-old-article {
+  width: 35em;
+}
+#main-blog .old-aritcle .title-old-article {
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+#main-blog .old-aritcle .date-old-article {
+  margin-top: 0;
+}
+#main-blog .old-aritcle .description-old-article {
+  width: 100%;
+}
+
+#star-blog {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 6.3em auto;
+}
+#star-blog #link-for-prince-article {
+  margin-top: 5em;
+}
+#star-blog #link-for-prince-article #prince-article-img {
+  width: 80vw;
+  height: auto;
+}
+#star-blog #link-for-prince-article #article-title {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  color: #1f1f1f;
+}
+#star-blog #link-for-prince-article #article-date {
+  margin-top: 0;
+}
+#star-blog #link-for-prince-article #article-description {
+  min-width: 100%;
+  color: #696969;
 }/*# sourceMappingURL=style.css.map */
