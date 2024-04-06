@@ -3,7 +3,7 @@ function addStarProject(linkName, iconName, name, iconTechnology) {
         <a href="https://github.com/Elasukou/${linkName}" target="_blank">
             <div class="star-project">
                 <div class="zoom">
-                    <img src="assets/images/${iconName}.svg" alt="Preview do projeto" class="image-star-project">
+                    <img src="assets/images/${iconName}.svg" loading="lazy" alt="Preview do projeto" class="image-star-project">
                 </div>
                 <div class="title-and-technology-project">
                     <h3 class="title-star-project">${name}</h3>
@@ -15,7 +15,7 @@ function addStarProject(linkName, iconName, name, iconTechnology) {
 }
 function addTechnologies(technology) {
     return `
-        <img src="assets/images/${technology}.svg" alt="logo do ${technology}" class="iconTechnologyProject">
+        <img src="assets/images/${technology}.svg" loading="lazy" alt="logo do ${technology}" class="iconTechnologyProject">
     `
 }
 document.querySelector("#small-base-1").innerHTML = 

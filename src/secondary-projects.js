@@ -9,7 +9,7 @@ function addProject(linkName, name, iconTechnology, description, namePhoto,) {
                             ${iconTechnology}
                         </div>
                     </div>
-                    <img src="assets/images/${namePhoto}.svg" alt="${description}" class="project-preview">
+                    <img src="assets/images/${namePhoto}.svg" loading="lazy" alt="${description}" class="project-preview">
         
             </div>
         </a>
@@ -17,7 +17,7 @@ function addProject(linkName, name, iconTechnology, description, namePhoto,) {
 }
 function addTechnologies(technology) {
     return `
-        <img src="assets/images/${technology}.svg" alt="${technology}" class="iconTechnologyProject">
+        <img src="assets/images/${technology}.svg" loading="lazy" alt="${technology}" class="iconTechnologyProject">
     `
 }
 document.querySelector("#small-base-2").innerHTML =
