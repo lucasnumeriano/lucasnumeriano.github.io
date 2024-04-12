@@ -22,10 +22,6 @@ html body ul {
   list-style: none;
 }
 
-* {
-  overflow-x: hidden;
-}
-
 .title {
   font-size: 3.5em;
   font-weight: 700;
