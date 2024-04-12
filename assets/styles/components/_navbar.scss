@@ -7,6 +7,17 @@
     margin-top: -6.4em;
     width: 100vw;
 
+    .social-link-menu {
+        margin: 2em auto auto -2em;
+        display: flex;
+        .social-link {
+            padding-left: 1em;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+
     .logo-link {
         padding: 1rem;
         .main-logo {
@@ -91,7 +102,9 @@
                 display: none;
             }
         }
-    
+        .social-link-menu {
+            display: none;
+        }
         .mobile-menu-icon {
             display: block;
             padding: 2rem;
@@ -117,6 +130,13 @@
             padding: 1rem;
             margin: 0;
             height: 100vh;
+            .link-social-media {
+                display: flex;
+                flex-direction: row;
+                .social-link-mobile {
+                    padding: 1em !important;
+                }
+            }
             .component-nav-list {
                 display: block;
                 padding: 2rem;

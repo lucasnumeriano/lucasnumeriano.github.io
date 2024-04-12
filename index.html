@@ -19,7 +19,12 @@
             <a href="#" class="logo-link">
                 <img src="assets/images/logo-principal.svg" alt="Logo com o nome Lucas Numeriano" class="logo main-logo">
             </a>
-            <!--Navbar-->
+            <!--Social Media-->
+            <ul class="social-link-menu">
+                <li><a href="https://www.linkedin.com/in/lucasnumeriano" target="_blank" class="social-link"><img src="assets/images/linkedin-logo.svg" alt="Logo do Linkedin"></a></li>
+                <li><a href="https://www.github.com/lucasnumeriano" target="_blank" class="social-link"><img src="assets/images/github-logo.svg" alt="Logo do Github"></a></li>
+            </ul>
+            <!--Menu-->
             <ul class="nav-list" role="menu">
                 <li class="component-nav-list">
                     <a href="https://www.linkedin.com/in/lucasnumeriano/recent-activity/articles/" target="_blank" class="link-nav-list">Artigos</a>
@@ -39,7 +44,7 @@
                     </div>
                 </li>
                 <li class="component-nav-list">
-                    <a href="blog/" class="link-nav-list">Blog</a>
+                    <a href="#" class="link-nav-list" onclick="notice()">Blog</a>
                 </li>
                 <li class="component-nav-list">
                     <a href="mailto:lucasnumeriano.dev@gmail.com" class="link-nav-list">Contato</a>
@@ -58,8 +63,12 @@
                 <li class="component-nav-list"><a href="https://www.linkedin.com/in/lucasnumeriano/recent-activity/articles/" target="_blank" class="link-nav-list">Artigos</a></li>
                 <li class="component-nav-list"><a href="#personal-projects" class="link-nav-list">Projetos</a></li>
                 <li class="component-nav-list"><a href="#aboutme" class="link-nav-list">Sobre mim</a></li>
-                <li class="component-nav-list"><a href="blog/indexblog.html" class="link-nav-list">Blog</a></li>
+                <li class="component-nav-list"><a href="#" class="link-nav-list blogLink" onclick="notice()">Blog</a></li>
                 <li class="component-nav-list"><a href="mailto:lucasnumeriano.dev@gmail.com" class="link-nav-list">Contato</a></li>
+                <li class="component-nav-list link-social-media">
+                    <a href="https://www.linkedin.com/in/lucasnumeriano" target="_blank" class="social-link-mobile"><img src="assets/images/linkedin-logo.svg" alt="Logo do Linkedin" class="img-social-media"></a>
+                    <a href="https://www.github.com/lucasnumeriano" target="_blank" class="social-link-mobile"><img src="assets/images/github-logo.svg" alt="Logo do Github" class="img-social-media"></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -146,7 +155,7 @@
                 <li class="certification">
                     <img src="assets/images/aluralogo.svg" loading="lazy" alt="Logo da Alura" class="institution-logo">
                     <div class="title-and-description-course">
-                        <a href="https://cursos.alura.com.br/certificate/fd99eb32-47ee-4693-86a8-0b4caa2e8fb7" target="_blank">
+                        <a href="https://cursos.alura.com.br/certificate/fd99eb32-47ee-4693-86a8-0b4caa2e8fb7" style="display: inline-block;" target="_blank">
                             <h3 class="course">JS e HTML: desenvolva um jogo e pratique lógica de programação [16 HORAS].</h3>
                             <h4 class="institution">Alura</h4>
                             <p class="credential">fd99eb32-47ee-4693-86a8-0b4caa2e8fb7</p>
@@ -295,7 +304,7 @@
         </a>
         <ul class="footer-list">
             <li class="component-footer-list"><a href="https://www.linkedin.com/in/lucasnumeriano" target="_blank" class="link-footer-list"><img src="assets/images/linkedin-logo.svg" alt="Logo do Linkedin"></a></li>
-            <li class="component-footer-list"><a href="https://www.github.com/elasukou" target="_blank" class="link-footer-list"><img src="assets/images/github-logo.svg" alt="Logo do Github"></a></li>
+            <li class="component-footer-list"><a href="https://www.github.com/lucasnumeriano" target="_blank" class="link-footer-list"><img src="assets/images/github-logo.svg" alt="Logo do Github"></a></li>
             <li class="component-footer-list"><a href=mailto:lucasnumeriano.dev@gmail.com target="_blank" class="link-footer-list"><img src="assets/images/envelope-simple.svg" alt="Evelope simples"></a></li>
         </ul>
         <hr class="line">
@@ -304,4 +313,9 @@
         <a href="#" class="back-to-the-top">Voltar para o topo &uparrow;</a>
     </footer>
 </body>
+<script>
+    function notice() {
+        window.alert("Ops, nosso blog ainda está em desenvolvimento. Mais não se preucupe, iremos disponibilizá-lo o mais rápido possível, Ok?")
+    }
+</script>
 </html>

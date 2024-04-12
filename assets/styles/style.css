@@ -22,6 +22,10 @@ html body ul {
   list-style: none;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 .title {
   font-size: 3.5em;
   font-weight: 700;
@@ -64,6 +68,16 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   margin-top: -6.4em;
   width: 100vw;
+}
+#navbar .social-link-menu {
+  margin: 2em auto auto -2em;
+  display: flex;
+}
+#navbar .social-link-menu .social-link {
+  padding-left: 1em;
+}
+#navbar .social-link-menu .social-link:hover {
+  opacity: 0.5;
 }
 #navbar .logo-link {
   padding: 1rem;
@@ -140,6 +154,9 @@ body::-webkit-scrollbar-thumb {
   #navbar .nav-list .component-nav-list {
     display: none;
   }
+  #navbar .social-link-menu {
+    display: none;
+  }
   #navbar .mobile-menu-icon {
     display: block;
     padding: 2rem;
@@ -164,6 +181,13 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem;
     margin: 0;
     height: 100vh;
+  }
+  .mobile-menu .nav-list .link-social-media {
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-menu .nav-list .link-social-media .social-link-mobile {
+    padding: 1em !important;
   }
   .mobile-menu .nav-list .component-nav-list {
     display: block;
@@ -831,8 +855,10 @@ body::-webkit-scrollbar-thumb {
     min-width: 85vw;
   }
   #certifications .container .certification .institution-logo {
-    width: 4em;
-    height: 4em;
+    min-width: 4em;
+    min-height: 4em;
+    max-width: 4em;
+    max-height: 4em;
   }
 }
 footer {

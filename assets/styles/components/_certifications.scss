@@ -100,8 +100,10 @@
             .certification {
                 min-width: 85vw;
                 .institution-logo {
-                    width: 4em;
-                    height: 4em;
+                    min-width: 4em;
+                    min-height: 4em;
+                    max-width: 4em;
+                    max-height: 4em;
                 }
             }
         }

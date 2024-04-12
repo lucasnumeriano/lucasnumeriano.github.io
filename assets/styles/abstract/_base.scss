@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5em; 
+    scroll-padding-top: 5em;
     body {
         margin: 0;
         padding: 0;
@@ -20,6 +20,10 @@ html {
             list-style: none;
         }
     }
+}
+
+* {
+    overflow-x: hidden;
 }
 
 .title {
