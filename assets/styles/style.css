@@ -5,6 +5,7 @@ html {
   scroll-padding-top: 5em;
 }
 html body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   cursor: url("../images/navigation-arrow-duotone.svg"), default;
@@ -817,6 +818,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   text-align: start;
   margin: 0 0 0 1em;
+  max-width: 70%;
 }
 #certifications .container .certification .title-and-description-course .credential {
   margin: 2em 0 0 1em;
@@ -848,7 +850,16 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
   #certifications .container .certification {
-    min-width: 85vw;
+    min-width: 90vw !important;
+  }
+  #certifications .container .certification .title-and-description-course {
+    max-width: 70vw;
+  }
+  #certifications .container .certification .title-and-description-course .course {
+    max-width: 85%;
+  }
+  #certifications .container .certification .title-and-description-course .credential {
+    max-width: 85%;
   }
   #certifications .container .certification .institution-logo {
     min-width: 4em;

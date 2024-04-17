@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 5em;
     body {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         cursor: url("../images/navigation-arrow-duotone.svg"), default;

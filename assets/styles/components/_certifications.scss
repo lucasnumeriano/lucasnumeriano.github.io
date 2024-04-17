@@ -60,6 +60,7 @@
                     font-weight: 400;
                     text-align: start;
                     margin: 0 0 0 1em;
+                    max-width: 70%;
                 }
                 .credential {
                     margin: 2em 0 0 1em;
@@ -98,7 +99,16 @@
         } 
         .container {
             .certification {
-                min-width: 85vw;
+                min-width: 90vw !important;
+                .title-and-description-course {
+                    max-width: 70vw;
+                    .course {
+                        max-width: 85%;
+                    }
+                    .credential {
+                        max-width: 85%;
+                    }
+                }
                 .institution-logo {
                     min-width: 4em;
                     min-height: 4em;
