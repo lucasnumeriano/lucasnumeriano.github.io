@@ -7,7 +7,7 @@
 Para visualizar na web: <a href="https://lucasnumeriano.github.io">lucasnumeriano.github.io</a>
 
 ## Preview
- <img src="https://lucasnumeriano.github.io/assets/images/portfolio-preview.png">
+ <img src="https://lucasnumeriano.github.io/preview.png">
 
 ## Ferramentas 🛠️
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)](https://docs.github.com/)
