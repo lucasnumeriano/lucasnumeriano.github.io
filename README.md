@@ -21,21 +21,4 @@ Para visualizar na web: <a href="https://lucasnumeriano.github.io">lucasnumerian
 ![](https://img.shields.io/badge/Figma-000?style=for-the-badge&logo=Figma&logoColor=pink)
 ![](https://img.shields.io/badge/-VS%20Code-000?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
 
-
-## Contribua
-[![Star](https://img.shields.io/github/stars/lucasnumeriano/lucasnumeriano.github.io)](https://github.com/lucasnumeriano.github.io/stargazers)
-[![Forks](https://img.shields.io/github/forks/lucasnumeriano/lucasnumeriano.github.io)](https://github.com/lucasnumeriano.github.io/forks)
-[![GitHub Issues](https://img.shields.io/github/issues/lucasnumeriano/lucasnumeriano.github.io)](https://github.com/lucasnumeriano.github.io/issues)
- <br>
- 
- Você pode contribuir:
-<br><br>
-🍴 Fazendo um Fork deste repo.
-
-🧑‍💻 Clonando na sua máquina.
- 
-⚠️ Resolvendo, respondendo ou indicando **issues**
-
-⭐ Adicionando aos favoritos (**star**) 
-
 <div align="center">Feito com 💙 por <a href="https://github.com/lucasnumeriano">Lucas</a>.</div>
