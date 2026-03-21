@@ -1,16 +1,26 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Este é meu portfolio, mas ele ainda está em desenvolvimento!",
-  "main": "index.js",
+  "name": "lucasnumeriano.github.io",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [],
-  "author": "Lucas Numeriano",
-  "license": "ISC",
+  "dependencies": {
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
   "devDependencies": {
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
